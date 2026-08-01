@@ -6,7 +6,7 @@ An enhanced, community-driven edit of Sonic Ether's SEUS PTGI HRR 2.1 shader pac
 
 ---
 
-## 🛠️ Installation Guide
+## Installation Guide
 
 Due to the SEUS EULA, distributing the modified code directly is illegal. Follow these steps to generate your shader pack:
 
@@ -20,7 +20,7 @@ Due to the SEUS EULA, distributing the modified code directly is illegal. Follow
 
 ---
 
-## ⚡ Key Features & July 2026 Updates
+## Key Features & July 2026 Updates
 
 * **Better FPS**: Optimized performance for smoother gameplay.
 * **Clean UI**: Polished shader menu with organized settings.
@@ -32,13 +32,13 @@ Due to the SEUS EULA, distributing the modified code directly is illegal. Follow
 
 ---
 
-## 🚀 Planned Features (Coming Soon)
+## Planned Features (Coming Soon)
 
 * **Waving Plants & Leaves**: Immersive wind animations for foliage, grass, and trees.
 
 ---
 
-## 📋 Requirements & Settings
+## Requirements & Settings
 
 To prevent a black screen, you **must** configure your settings exactly as shown below.
 
