@@ -20,18 +20,6 @@ Due to the SEUS EULA, distributing the modified code directly is illegal. Follow
 
 ---
 
-## Key Features & July 2026 Updates
-
-* **Better FPS**: Optimized performance for smoother gameplay.
-* **Clean UI**: Polished shader menu with organized settings.
-* **Reduced GI Range**: New default setting to boost performance in complex worlds.
-* **Rain Splash Bilateral**: Optional smooth ripple textures without pixel edges.
-* **Clear Reflections**: Reduced visual noise for natural water surfaces.
-* **Bug Fixes**: Resolved unnatural rendering bugs on leaves and blocks.
-* **Anisotropic LOD Bias**: Added anisotropic LOD bias support to improve texture sharpness at angles.
-
----
-
 ## Planned Features (Coming Soon)
 
 * **Waving Plants & Leaves**: Immersive wind animations for foliage, grass, and trees.
