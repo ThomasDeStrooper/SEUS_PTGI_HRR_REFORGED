@@ -28,8 +28,6 @@ Due to the SEUS EULA, distributing the modified code directly is illegal. Follow
 
 ## Requirements & Settings
 
-To prevent a black screen, you **must** configure your settings exactly as shown below.
-
 ### Mandatory Minecraft Settings
 * **Game Version**: Minecraft 1.16.4 or newer.
 * **Shader Mod**: OptiFine HD U G5+ or Iris is required.
