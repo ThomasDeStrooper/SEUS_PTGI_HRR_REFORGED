@@ -4,7 +4,7 @@ An enhanced, community-driven edit of Sonic Ether's SEUS PTGI HRR 2.1 shader pac
 
 > **Note:** This project is non-commercial. I do not make money from this edit. It is built purely out of passion.
 
-> **Important:** Unlike other edits like *SEUS PTGI HRR 2.1 GFME*, this project does not completely overhaul the shader or alter its signature lighting colors. It introduces new features and quality enhancements while strictly preserving the exact look, feel, and atmosphere of the original SEUS PTGI HRR 2.1.
+> **Important:** Unlike other edits like *SEUS PTGI HRR 2.1 GFME*, this project **DOES NOT** completely overhaul the shader or alter its **SIGNATURE LIGHTING COLORS**. It introduces new features and quality enhancements while **STRICTLY PRESERVING** the exact look, feel, and atmosphere of the **ORIGINAL SEUS PTGI HRR 2.1**.
 
 ---
 
@@ -37,8 +37,9 @@ This edit adds multiple new, customizable options directly inside your in-game s
 
 ## 🚀 Planned Features (Coming Soon)
 
-* **Wavy Grass & Foliage** – Immersive wind animations for foliage, grass, and trees
+- **Wavy Grass & Foliage** – Immersive wind animations for foliage, grass, and trees
 - **Dynamic Held Light Intensity Slider** – Gives you a slider to manually adjust how bright your hand-held light sources are
+- **Improved God Rays** – Upgraded god rays with either increased length or better visual quality. **TBD**.
 
 ---
 
