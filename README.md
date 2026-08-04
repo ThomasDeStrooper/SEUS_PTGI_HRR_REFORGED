@@ -8,7 +8,7 @@ An enhanced, community-driven edit of Sonic Ether's SEUS PTGI HRR 2.1 shader pac
 
 ---
 
-## 📸 Comparison & Visuals
+## Comparison & Visuals
 
 Here is a side-by-side comparison showing the shader in action. Both shaders are in their default state; nothing has been modified. The first image shows the original shader with lower reflection quality. The second image shows the Reforged edition, which improves reflection quality and optimizes performance.
 
@@ -20,7 +20,7 @@ Here is a side-by-side comparison showing the shader in action. Both shaders are
 
 ---
 
-## ⚙️ Features
+## Features
 
 This edit adds multiple new, customizable options directly inside your in-game shader menu:
 
@@ -35,7 +35,7 @@ This edit adds multiple new, customizable options directly inside your in-game s
 
 ---
 
-## 🚀 Planned Features (Coming Soon)
+## Planned Features (Coming Soon)
 
 - **Wavy Grass & Foliage** – Immersive wind animations for foliage, grass, and trees
 - **Dynamic Held Light Intensity Slider** – Gives you a slider to manually adjust how bright your hand-held light sources are
@@ -43,7 +43,7 @@ This edit adds multiple new, customizable options directly inside your in-game s
 
 ---
 
-## 💻 Requirements & Settings
+## Requirements & Settings
 
 ### Mandatory Minecraft Settings
 * **Game Version**: Minecraft 1.16.4 or newer.
@@ -55,7 +55,7 @@ This edit adds multiple new, customizable options directly inside your in-game s
 
 ---
 
-## 🛠️ Installation Guide
+## Installation Guide
 
 Due to the SEUS EULA, distributing the modified code directly is illegal. Follow these steps to generate your shader pack:
 
