@@ -10,7 +10,7 @@ An enhanced, community-driven edit of Sonic Ether's SEUS PTGI HRR 2.1 shader pac
 
 ## 📸 Comparison & Visuals
 
-Here is a side-by-side comparison showing the shader in action. The first photo displays the original shader with lower reflection quality. The second photo showcases the Reforged edition, which fixes reflection quality and improves performance.
+Here is a side-by-side comparison showing the shader in action. Both shaders are in their default state; nothing has been modified. The first image shows the original shader with lower reflection quality. The second image shows the Reforged edition, which improves reflection quality and optimizes performance.
 
 ### Original SEUS PTGI HRR 2.1
 <img width="1920" height="1080" alt="test2" src="https://github.com/user-attachments/assets/ca010aef-7549-4fd9-a28b-ac57d3bfc94f" />
