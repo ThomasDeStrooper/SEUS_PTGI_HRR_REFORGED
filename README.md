@@ -60,7 +60,7 @@ Due to the SEUS EULA, distributing the modified code directly is illegal. Follow
 
 1. **Prerequisite**: Ensure you have either [OptiFine](https://optifine.net) (HD U G5 or newer) or [Iris Shader](https://irisshaders.dev) installed on your Minecraft profile.
 2. **Download Reforged Pack**: Download the `SEUS PTGI HRR 2.1 Reforged` zip file from this repository.
-3. **Download Original Pack**: Obtain the original, unmodified `SEUS PTGI HRR 2.1` shader zip file directly from the official [Sonic Ether Patreon Page]([https://patreon.com](https://www.patreon.com/sonicether/posts/download-seus-2-45141775).
+3. **Download Original Pack**: Obtain the original, unmodified `SEUS PTGI HRR 2.1` shader zip file directly from the official [Sonic Ether Patreon Page](https://www.patreon.com/sonicether/posts/download-seus-2-45141775).
 4. **Extract Reforged**: Unzip the `SEUS PTGI HRR 2.1 Reforged` zip file into a new folder on your computer.
 5. **Open Folder**: Open that extracted Reforged folder to view its contents.
 6. **Place Original Shader**: Move the original, unzipped `SEUS PTGI HRR 2.1` shader file from Sonic Ether (Cody) directly into this folder, placing it right next to the file named `Install`.
