@@ -4,11 +4,13 @@ An enhanced, community-driven edit of Sonic Ether's SEUS PTGI HRR 2.1 shader pac
 
 > **Note:** This project is non-commercial. I do not make money from this edit. It is built purely out of passion.
 
+> **Important:** Unlike other edits like *SEUS PTGI HRR 2.1 GFME*, this project does not completely overhaul the shader or alter its signature lighting colors. It introduces new features and quality enhancements while strictly preserving the exact look, feel, and atmosphere of the original SEUS PTGI HRR 2.1.
+
 ---
 
 ## 📸 Comparison & Visuals
 
-Here is a side-by-side comparison showing the shader in action. The first photo displays the original shader with lower reflection quality. The second photo showcases the Reforged edition, which fixes reflection quality and significantly improves performance.
+Here is a side-by-side comparison showing the shader in action. The first photo displays the original shader with lower reflection quality. The second photo showcases the Reforged edition, which fixes reflection quality and improves performance.
 
 ### Original SEUS PTGI HRR 2.1
 <img width="1920" height="1080" alt="test2" src="https://github.com/user-attachments/assets/ca010aef-7549-4fd9-a28b-ac57d3bfc94f" />
