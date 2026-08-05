@@ -14,9 +14,11 @@ Here is a side-by-side comparison showing the shader in action. Both shaders are
 
 ### Original SEUS PTGI HRR 2.1
 <img width="1920" height="1080" alt="test2" src="https://github.com/user-attachments/assets/ca010aef-7549-4fd9-a28b-ac57d3bfc94f" />
+<img width="1920" height="1080" alt="2026-08-05_15 35 18" src="https://github.com/user-attachments/assets/824bf962-dd80-4a1e-9f44-6eb1ed995ba9" />
 
 ### SEUS PTGI HRR 2.1 Reforged
 <img width="1920" height="1080" alt="2026-08-04_15 26 47" src="https://github.com/user-attachments/assets/6d56c587-0696-4ead-ac02-0bbee680a9ea" />
+<img width="1920" height="1080" alt="2026-08-05_15 35 32" src="https://github.com/user-attachments/assets/2368197f-a857-49d4-924c-7f89e76904cb" />
 
 ---
 
@@ -32,6 +34,14 @@ This edit adds multiple new, customizable options directly inside your in-game s
 - **Godrays Stained Glass Tint** – Volumetric light rays inherit colors from stained glass windows
 * **Water Waves Height** – Fully customizable ocean and river wave heights
 - **Shadow Map Resolution** – Fine-tune your shadow map quality for better performance or visuals
+
+* **Updated Light Emission** - Updated the block layout to support light emission from the following new blocks:
+  - End Rod
+  - Candles
+  - Froglights
+  - Copper Lanterns
+  - Copper Torch
+  - Beacon
 
 ---
 
