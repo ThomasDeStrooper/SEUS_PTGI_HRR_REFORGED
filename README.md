@@ -1,92 +1,169 @@
 # SEUS PTGI HRR 2.1 Reforged
 
-An enhanced, community-driven edit of Sonic Ether's SEUS PTGI HRR 2.1 shader pack. This project focuses strictly on quality improvements and performance optimization.
+An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** focused on improving image quality, expanding customization, and optimizing performance while **preserving the original artistic vision**.
 
-> **Note:** This project is non-commercial. I do not make money from this edit. It is built purely out of passion.
+> **Non-Commercial Project**
+> This project is created purely out of passion for the Minecraft shader community. It is not affiliated with or endorsed by Sonic Ether, and no money is made from this edit.
 
-> **Important:** Unlike other edits like *SEUS PTGI HRR 2.1 GFME*, this project **DOES NOT** completely overhaul the shader or alter its **SIGNATURE LIGHTING COLORS**. It introduces new features and quality enhancements while **STRICTLY PRESERVING** the exact look, feel, and atmosphere of the **ORIGINAL SEUS PTGI HRR 2.1**.
+> **Preserving the Original Look**
+> Unlike edits such as **SEUS PTGI HRR 2.1 GFME**, Reforged does **not** overhaul the shader or alter its signature lighting colors. Every enhancement is designed to blend seamlessly into the original experience while maintaining the exact atmosphere and visual identity of **SEUS PTGI HRR 2.1**.
 
-## Installation Guide
+---
+# Installation
 
-Due to the SEUS EULA, distributing the modified code directly is illegal. Follow these steps to generate your shader pack:
+1. Install **OptiFine HD U G5+** or **Iris Shaders**.
+2. Download the **SEUS PTGI HRR 2.1 Reforged** from this repository.
+3. Download the original **SEUS PTGI HRR 2.1** shader from Sonic Ether's Patreon.
+4. Extract the Reforged Patcher ZIP.
+5. Place the original **SEUS PTGI HRR 2.1** ZIP inside the extracted folder. You can also simply drag and drop the **SEUS PTGI HRR 2.1** ZIP by Cody onto **Apply Patch.bat** if you prefer, so you don't need to double-click it first.
+6. Double-click **Apply Patch.bat**.
+7. The patcher will automatically generate your final **SEUS PTGI HRR 2.1 Reforged** shader pack. If you didn't use drag and drop, you can also drag and drop the shader ZIP onto **Apply Patch.bat** when prompted. The patcher will then ask whether you want to automatically install the generated shader into your shaderpacks folder. Enter **Y** for Yes or **N** for No.
 
-1. **Prerequisite**: Ensure you have either [OptiFine](https://optifine.net) (HD U G5 or newer) or [Iris Shader](https://irisshaders.dev) installed on your Minecraft profile.
-2. **Download Reforged Pack**: Download the `SEUS PTGI HRR 2.1 Reforged` zip file from this repository.
-3. **Download Original Pack**: Obtain the original, unmodified `SEUS PTGI HRR 2.1` shader zip file directly from the official [Sonic Ether Patreon Page](https://www.patreon.com/sonicether/posts/download-seus-2-45141775).
-4. **Extract Reforged**: Unzip the `SEUS PTGI HRR 2.1 Reforged` zip file into a new folder on your computer.
-5. **Open Folder**: Open that extracted Reforged folder to view its contents.
-6. **Place Original Shader**: Move the original, unzipped `SEUS PTGI HRR 2.1` shader file from Sonic Ether (Cody) directly into this folder, placing it right next to the file named `Install`.
-7. **Generate Shader**: Double click the `Install` file to run the script and automatically generate your final optimized shader pack.
-   
+# What's New
+
+This version focuses on improving both the visual quality of the shader and the overall user experience.
+
+### New Features
+
+* Added colored lighting support for:
+
+  * End Rods
+  * Candles
+  * Froglights
+  * Copper Lanterns
+  * Copper Torches
+  * Beacons
+  * Brewing Stand
+  * Vault
+
+* Added light color profiles for more accurate colored lighting.
+
+* Added completely reorganized shader menus with new subcategories.
+
+* Added:
+
+  * Godrays Stained Glass Tint
+  * Stained Sunlight (Ray Tracing)
+  * Moonlight Intensity
+  * Parallax Depth
+
+### Improvements
+
+* Reworked the internal block layout for modern Minecraft blocks.
+* Improved colored lighting accuracy and consistency.
+* Refined the colored lighting system for cleaner results.
+* Reorganized every shader menu for easier navigation.
+* Renamed numerous settings to be more descriptive.
+* Simplified the installation process.
+
 ---
 
-## Comparison & Visuals
+# Features
 
-Here is a side-by-side comparison showing the shader in action. Both shaders are in their default state; nothing has been modified. The first image shows the original shader with lower reflection quality. The second image shows the Reforged edition, which improves reflection quality and optimizes performance.
+Reforged introduces several configurable options directly inside the shader menu.
 
-### Original SEUS PTGI HRR 2.1
+### Visual
+
+* Moonlight Intensity
+* Stained Sunlight (Ray Tracing)
+* Godrays Stained Glass Tint
+* Parallax Depth
+* Smooth Rain Splash
+* Water Wave Height
+* Shadow Map Resolution
+* Anisotropic LOD Bias
+
+### Updated Light Emission
+
+The following blocks now emit properly colored ray-traced light:
+
+* End Rod
+* Candles
+* Froglights
+* Copper Lanterns
+* Copper Torch
+* Beacon
+* Brewing Stand
+* Vault
+
+---
+
+# Comparison
+
+Both images below use the default shader settings.
+
+The original shader already looks excellent, but Reforged improves reflection quality, expands customization, and introduces numerous internal optimizations while preserving the original artistic appearance.
+
+## Original SEUS PTGI HRR 2.1
+
 <img width="1920" height="1080" alt="test2" src="https://github.com/user-attachments/assets/ca010aef-7549-4fd9-a28b-ac57d3bfc94f" />
+
 <img width="1920" height="1080" alt="2026-08-05_15 35 18" src="https://github.com/user-attachments/assets/824bf962-dd80-4a1e-9f44-6eb1ed995ba9" />
 
-### SEUS PTGI HRR 2.1 Reforged
+## SEUS PTGI HRR 2.1 Reforged
+
 <img width="1920" height="1080" alt="2026-08-04_15 26 47" src="https://github.com/user-attachments/assets/6d56c587-0696-4ead-ac02-0bbee680a9ea" />
+
 <img width="1920" height="1080" alt="2026-08-05_15 35 32" src="https://github.com/user-attachments/assets/2368197f-a857-49d4-924c-7f89e76904cb" />
 
 ---
 
-## Features
+# Planned Features
 
-This edit adds multiple new, customizable options directly inside your in-game shader menu:
-
-* **Moonlight Intensity** – Easily change the brightness of the night environment
-- **Stained Sunlight** – Enhanced color filtering for light passing through stained glass in ray tracing mode
-* **Anisotropic LOD Bias** – Sharper texture filtering at sharp viewing angles and long distances
-- **Smooth Rain Splash** – Cleaner, more realistic wet-weather splash effects
-* **Parallax Depth** – Realistic three-dimensional depth on blocks and surfaces
-- **Godrays Stained Glass Tint** – Volumetric light rays inherit colors from stained glass windows
-* **Water Waves Height** – Fully customizable ocean and river wave heights
-- **Shadow Map Resolution** – Fine-tune your shadow map quality for better performance or visuals
-
-* **Updated Light Emission** - Updated the block layout to support light emission from the following new blocks:
-  - End Rod
-  - Candles
-  - Froglights
-  - Copper Lanterns
-  - Copper Torch
-  - Beacon
+* Wavy Grass & Foliage
+* Dynamic Held Light Intensity Slider
+* Improved God Rays
+* Additional performance optimizations
+* More configurable ray tracing options
 
 ---
 
-## Planned Features (Coming Soon)
+# Requirements
 
-- **Wavy Grass & Foliage** – Immersive wind animations for foliage, grass, and trees
-- **Dynamic Held Light Intensity Slider** – Gives you a slider to manually adjust how bright your hand-held light sources are
-- **Improved God Rays** – Upgraded god rays with either increased length or better visual quality. **TBD**.
+## Minecraft
 
----
+* Minecraft **1.16.4+**
+* OptiFine **HD U G5+** or **Iris**
 
-## Requirements & Settings
+## Recommended Hardware
 
-### Mandatory Minecraft Settings
-* **Game Version**: Minecraft 1.16.4 or newer.
-- **Shader Mod**: OptiFine HD U G5+ or Iris is required.
-
-### Hardware Requirements
-* **Minimum GPU**: NVIDIA RTX 2050.
-- **Recommended GPU**: NVIDIA RTX 3060.
+| Hardware        | Recommendation  |
+| --------------- | --------------- |
+| Minimum GPU     | NVIDIA RTX 2050 |
+| Recommended GPU | NVIDIA RTX 3060 |
 
 ---
 
-## ⚠️ Known Issues & Compatibility
+# Known Issues
 
-### General Bugs
-* Custom block models in resource packs may cause lighting glitches.
-- Moving entities can sometimes look distorted.
-* Godrays may leak through buildings due to high optimization.
-- Tall buildings might experience minor interior light leaks.
-* PBR materials can appear overly bright in dark areas like caves.
+### General
 
-### Hardware Compatibility
-* **NVIDIA**: Fully supported and tested.
-- **AMD**: Minor visual bugs and occasional crashes may occur. *Fix: Launch the game or enable shaders in a small windowed mode first.*
-* **Intel**: Compatibility is not guaranteed and is not planned.
+* Custom block models from some resource packs may produce lighting artifacts.
+* Moving entities may occasionally appear distorted.
+* Godrays can leak through very large structures due to optimization.
+* Tall buildings may show minor interior light leaks.
+* Some PBR materials can appear brighter than intended in dark environments.
+
+### Compatibility
+
+**NVIDIA**
+
+* Fully supported and tested.
+
+**AMD**
+
+* Minor visual issues or occasional crashes may occur.
+* Workaround: Launch Minecraft or enable shaders in a small window first.
+
+**Intel**
+
+* Compatibility is currently not guaranteed.
+
+---
+
+# Credits
+
+* Original shader by **Sonic Ether**
+* Reforged improvements by the community
+
+This project exists solely to extend the life of one of Minecraft's most iconic ray tracing shader packs while staying faithful to its original visual style.
