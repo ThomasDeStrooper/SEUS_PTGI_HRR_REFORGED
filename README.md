@@ -19,43 +19,6 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 6. Double-click **Apply Patch.bat**.
 7. The patcher will automatically generate your final **SEUS PTGI HRR 2.1 Reforged** shader pack. The patcher will then ask whether you want to automatically install the generated shader into your shaderpacks folder. Enter **Y** for Yes or **N** for No.
 
-# What's New
-
-This version focuses on improving both the visual quality of the shader and the overall user experience.
-
-### New Features
-
-* Added colored lighting support for:
-
-  * End Rods
-  * Candles
-  * Froglights
-  * Copper Lanterns
-  * Copper Torches
-  * Beacons
-  * Brewing Stand
-  * Vault
-
-* Added light color profiles for more accurate colored lighting.
-
-* Added completely reorganized shader menus with new subcategories.
-
-* Added:
-
-  * Godrays Stained Glass Tint
-  * Stained Sunlight (Ray Tracing)
-  * Moonlight Intensity
-  * Parallax Depth
-
-### Improvements
-
-* Reworked the internal block layout for modern Minecraft blocks.
-* Improved colored lighting accuracy and consistency.
-* Refined the colored lighting system for cleaner results.
-* Reorganized every shader menu for easier navigation.
-* Renamed numerous settings to be more descriptive.
-* Simplified the installation process.
-
 ---
 
 # Features
@@ -78,7 +41,7 @@ Reforged introduces several configurable options directly inside the shader menu
 The following blocks now emit properly colored ray-traced light:
 
 * End Rod
-* Candles
+* Candles (candles cast light matching their actual color)
 * Froglights
 * Copper Lanterns
 * Copper Torch
