@@ -75,7 +75,6 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 * Wavy Grass & Foliage
 * Dynamic Held Light Intensity Slider
-* Improved God Rays
 * Additional performance optimizations
 * More configurable ray tracing options
 
