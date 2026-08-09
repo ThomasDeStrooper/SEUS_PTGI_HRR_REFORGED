@@ -49,6 +49,11 @@ The following blocks now emit properly colored ray-traced light:
 * Brewing Stand
 * Vault
 
+### Added wavy leaves
+
+* Added wavy animations to flowers.
+* Added wavy animations to plants.
+
 ---
 
 # Comparison
@@ -73,7 +78,6 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 # Planned Features
 
-* Wavy Grass & Foliage
 * Dynamic Held Light Intensity Slider
 * Additional performance optimizations
 * More configurable ray tracing options
