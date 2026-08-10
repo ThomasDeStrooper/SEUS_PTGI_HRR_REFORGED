@@ -28,6 +28,8 @@ Reforged introduces several configurable options directly inside the shader menu
 ### Visual
 
 * Moonlight Intensity
+* Held Light Intensity
+* Wind Intensity Control
 * Stained Sunlight (Ray Tracing)
 * Godrays Stained Glass Tint
 * Parallax Depth
