@@ -80,7 +80,6 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 # Planned Features
 
-* Dynamic Held Light Intensity Slider
 * Additional performance optimizations
 * More configurable ray tracing options
 
