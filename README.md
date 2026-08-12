@@ -70,11 +70,16 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 <img width="1920" height="1080" alt="2026-08-05_15 35 18" src="https://github.com/user-attachments/assets/824bf962-dd80-4a1e-9f44-6eb1ed995ba9" />
 
+<img width="1920" height="1080" alt="original" src="https://github.com/user-attachments/assets/d912b5f3-e91c-4caa-a48b-cc4d0afff76b" />
+
+
 ## SEUS PTGI HRR 2.1 Reforged
 
 <img width="1920" height="1080" alt="2026-08-04_15 26 47" src="https://github.com/user-attachments/assets/6d56c587-0696-4ead-ac02-0bbee680a9ea" />
 
 <img width="1920" height="1080" alt="2026-08-05_15 35 32" src="https://github.com/user-attachments/assets/2368197f-a857-49d4-924c-7f89e76904cb" />
+
+<img width="1920" height="1080" alt="new" src="https://github.com/user-attachments/assets/ded723e9-03ab-44cd-b79e-6b559139b3a4" />
 
 ---
 
