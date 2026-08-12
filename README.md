@@ -29,6 +29,8 @@ Reforged introduces several configurable options directly inside the shader menu
 
 * Moonlight Intensity
 * Held Light Intensity
+* Underwater Distortion Intensity
+* Underwater Distortion Speed Intensity
 * Wind Intensity Control
 * Stained Sunlight (Ray Tracing)
 * Godrays Stained Glass Tint
