@@ -23,11 +23,12 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 ## v2.3 Roadmap
 
-| Milestone          | Objective                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------- |
-| Custom Moon        | Implement a custom moon texture                                                        |
-| Entity Rendering   | Improve moving entity rendering and reduce visual distortion                           |
-| Hologram Rendering | Remove the black background/rectangle around hologram text so only the text is visible |
+| Milestone             | Objective                                                                                                   |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Custom Moon           | Implement a custom moon texture                                                                             |
+| Entity Rendering      | Improve moving entity rendering and reduce visual distortion                                                |
+| Hologram Rendering    | Remove the static black background around hologram text so only the text is visible                         |
+| Dynamic Plant Shadows | Make shadows for moving grass, flowers, leaves, and other plants move correctly instead of remaining static |
 
 # Features
 
