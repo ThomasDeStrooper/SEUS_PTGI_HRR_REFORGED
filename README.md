@@ -94,13 +94,6 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 ---
 
-# Planned Features
-
-* Additional performance optimizations
-* More configurable ray tracing options
-
----
-
 # Requirements
 
 ## Minecraft
