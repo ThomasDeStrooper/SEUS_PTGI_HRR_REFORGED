@@ -21,6 +21,14 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 ---
 
+## v2.3 Roadmap
+
+| Milestone          | Objective                                                                              |
+| ------------------ | -------------------------------------------------------------------------------------- |
+| Custom Moon        | Implement a custom moon texture                                                        |
+| Entity Rendering   | Improve moving entity rendering and reduce visual distortion                           |
+| Hologram Rendering | Remove the black background/rectangle around hologram text so only the text is visible |
+
 # Features
 
 Reforged introduces several configurable options directly inside the shader menu.
@@ -113,9 +121,8 @@ The original shader already looks excellent, but Reforged improves reflection qu
 ### General
 
 * Custom block models from some resource packs may produce lighting artifacts.
-* Moving entities may occasionally appear distorted.
 * Godrays can leak through very large structures due to optimization.
-* Tall buildings may show minor interior light leaks.
+* Tall buildings may show interior light leaks.
 * Some PBR materials can appear brighter than intended in dark environments.
 
 ### Compatibility
