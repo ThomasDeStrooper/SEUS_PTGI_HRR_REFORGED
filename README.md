@@ -36,7 +36,7 @@ Reforged introduces several configurable options directly inside the shader menu
 
 ### Visual
 
-*Cloud Shadow
+* Cloud Shadow
 * Moonlight Intensity
 * Held Light Intensity
 * Camera Sway
