@@ -38,6 +38,8 @@ Reforged introduces several configurable options directly inside the shader menu
 
 * Moonlight Intensity
 * Held Light Intensity
+* Camera Sway
+* Hand Sway
 * Underwater Distortion Intensity
 * Underwater Distortion Speed Intensity
 * Wind Intensity Control
