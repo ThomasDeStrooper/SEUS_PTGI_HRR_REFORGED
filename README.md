@@ -9,6 +9,7 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 > Unlike edits such as **SEUS PTGI HRR 2.1 GFME**, Reforged does **not** overhaul the shader or alter its signature lighting colors. Every enhancement is designed to blend seamlessly into the original experience while maintaining the exact atmosphere and visual identity of **SEUS PTGI HRR 2.1**.
 
 ---
+
 # Installation
 
 1. Install **OptiFine HD U G5+** or **Iris Shaders**.
@@ -73,6 +74,18 @@ The following blocks now emit properly colored ray-traced light:
 
 ---
 
+# Feature Showcase
+
+Here are a few videos showcasing some of the visual improvements, effects, and features available in **SEUS PTGI HRR 2.1 Reforged**.
+
+## Showcase of Some of Its Features
+
+<video src="https://github.com/user-attachments/assets/323f4260-4c03-4f56-8fbc-d52d234ef612" controls width="100%"></video>
+
+<video src="https://github.com/user-attachments/assets/92d0b9d4-cfb3-4720-ac51-cbe901d13395" controls width="100%"></video>
+
+---
+
 # Comparison
 
 Both images below use the default shader settings.
@@ -86,7 +99,6 @@ The original shader already looks excellent, but Reforged improves reflection qu
 <img width="1920" height="1080" alt="2026-08-05_15 35 18" src="https://github.com/user-attachments/assets/824bf962-dd80-4a1e-9f44-6eb1ed995ba9" />
 
 <img width="1920" height="1080" alt="original" src="https://github.com/user-attachments/assets/d912b5f3-e91c-4caa-a48b-cc4d0afff76b" />
-
 
 ## SEUS PTGI HRR 2.1 Reforged
 
