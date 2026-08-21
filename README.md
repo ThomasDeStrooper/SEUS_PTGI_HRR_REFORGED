@@ -39,6 +39,7 @@ Reforged introduces several configurable options directly inside the shader menu
 * Cloud Shadow
 * Moonlight Intensity
 * Held Light Intensity
+* Rain Drop Screen Effect
 * Camera Sway
 * Hand Sway
 * Underwater Distortion Intensity
