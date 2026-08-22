@@ -26,7 +26,7 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 | Milestone                 |      Status      | Objective                                                                                                   |
 | ------------------------- | :--------------: | ----------------------------------------------------------------------------------------------------------- |
-| **Custom Moon**           | 🔴 **Not Fixed** | Implement a custom moon texture                                                                             |
+| **Custom Moon**           | 🟢 **Fixed** | Implement a custom moon texture                                                                             |
 | **Entity Rendering**      | 🔴 **Not Fixed** | Improve moving entity rendering and reduce visual distortion                                                |
 | **Hologram Rendering**    | 🟢 **Fixed**   | Remove the static black background around hologram text so only the text is visible                         |
 | **Dynamic Plant Shadows** | 🔴 **Not Fixed** | Make shadows for moving grass, flowers, leaves, and other plants move correctly instead of remaining static |
@@ -44,6 +44,7 @@ Reforged introduces several configurable options directly inside the shader menu
 
 ### Visual
 
+* Sun & Moon Reflections
 * Cloud Shadow
 * Moonlight Intensity
 * Held Light Intensity
@@ -116,6 +117,9 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 <img width="49%" alt="Before - 2026-08-22_15 51 57" src="https://github.com/user-attachments/assets/82e34879-af13-48e9-97af-98dde9754100" />
 <img width="49%" alt="After - 2026-08-22_15 52 11" src="https://github.com/user-attachments/assets/7f7de0a4-3a39-433e-8707-495fdce19f7f" />
+
+<img width="49%" alt="2026-08-22_22 29 40" src="https://github.com/user-attachments/assets/54ed32da-046c-47df-81fb-6074c4a631f9" />
+<img width="49%" alt="2026-08-22_22 29 28" src="https://github.com/user-attachments/assets/8d1de113-437e-4ab2-974d-0a1000d07360" />
 
 ---
 
