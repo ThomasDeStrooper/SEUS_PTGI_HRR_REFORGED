@@ -140,8 +140,6 @@ The original shader already looks excellent, but Reforged improves reflection qu
 ### General
 
 * Custom block models from some resource packs may produce lighting artifacts.
-* Godrays can leak through very large structures due to optimization.
-* Tall buildings may show interior light leaks.
 * Some PBR materials can appear brighter than intended in dark environments.
 
 ### Compatibility
