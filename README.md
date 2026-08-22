@@ -99,21 +99,22 @@ Both images below use the default shader settings.
 
 The original shader already looks excellent, but Reforged improves reflection quality, expands customization, and introduces numerous internal optimizations while preserving the original artistic appearance.
 
-## Original SEUS PTGI HRR 2.1
+**Original SEUS PTGI HRR 2.1** | **SEUS PTGI HRR 2.1 Reforged**
 
-<img width="1920" height="1080" alt="test2" src="https://github.com/user-attachments/assets/ca010aef-7549-4fd9-a28b-ac57d3bfc94f" />
+<img width="49%" alt="Original" src="https://github.com/user-attachments/assets/ca010aef-7549-4fd9-a28b-ac57d3bfc94f" />
+<img width="49%" alt="Reforged" src="https://github.com/user-attachments/assets/6d56c587-0696-4ead-ac02-0bbee680a9ea" />
 
-<img width="1920" height="1080" alt="2026-08-05_15 35 18" src="https://github.com/user-attachments/assets/824bf962-dd80-4a1e-9f44-6eb1ed995ba9" />
+<img width="49%" alt="2026-08-05_15 35 18" src="https://github.com/user-attachments/assets/824bf962-dd80-4a1e-9f44-6eb1ed995ba9" />
+<img width="49%" alt="2026-08-05_15 35 32" src="https://github.com/user-attachments/assets/2368197f-a857-49d4-924c-7f89e76904cb" />
 
-<img width="1920" height="1080" alt="original" src="https://github.com/user-attachments/assets/d912b5f3-e91c-4caa-a48b-cc4d0afff76b" />
+<img width="49%" alt="original" src="https://github.com/user-attachments/assets/d912b5f3-e91c-4caa-a48b-cc4d0afff76b" />
+<img width="49%" alt="new" src="https://github.com/user-attachments/assets/ded723e9-03ab-44cd-b79e-6b559139b3a4" />
 
-## SEUS PTGI HRR 2.1 Reforged
+<img width="49%" alt="Before - 2026-08-22_15 24 54" src="https://github.com/user-attachments/assets/0d896ab0-3a06-4a89-8f04-63d8b2328d34" />
+<img width="49%" alt="After - 2026-08-22_15 25 10" src="https://github.com/user-attachments/assets/1f9050b3-0016-4b71-9126-0064d257871f" />
 
-<img width="1920" height="1080" alt="2026-08-04_15 26 47" src="https://github.com/user-attachments/assets/6d56c587-0696-4ead-ac02-0bbee680a9ea" />
-
-<img width="1920" height="1080" alt="2026-08-05_15 35 32" src="https://github.com/user-attachments/assets/2368197f-a857-49d4-924c-7f89e76904cb" />
-
-<img width="1920" height="1080" alt="new" src="https://github.com/user-attachments/assets/ded723e9-03ab-44cd-b79e-6b559139b3a4" />
+<img width="49%" alt="Before - 2026-08-22_15 51 57" src="https://github.com/user-attachments/assets/82e34879-af13-48e9-97af-98dde9754100" />
+<img width="49%" alt="After - 2026-08-22_15 52 11" src="https://github.com/user-attachments/assets/7f7de0a4-3a39-433e-8707-495fdce19f7f" />
 
 ---
 
