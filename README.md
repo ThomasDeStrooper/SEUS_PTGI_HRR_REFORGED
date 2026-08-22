@@ -24,12 +24,18 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 ## v2.3 Roadmap
 
-| Milestone             | Objective                                                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Custom Moon           | Implement a custom moon texture                                                                                                  |
-| Entity Rendering      | Improve moving entity rendering and reduce visual distortion                                                                     |
-| Hologram Rendering    | Remove the static black background around hologram text so only the text is visible **<span style="color:green">✓ Fixed</span>** |
-| Dynamic Plant Shadows | Make shadows for moving grass, flowers, leaves, and other plants move correctly instead of remaining static                      |
+| Milestone                 |      Status      | Objective                                                                                                   |
+| ------------------------- | :--------------: | ----------------------------------------------------------------------------------------------------------- |
+| **Custom Moon**           | 🔴 **Not Fixed** | Implement a custom moon texture                                                                             |
+| **Entity Rendering**      | 🔴 **Not Fixed** | Improve moving entity rendering and reduce visual distortion                                                |
+| **Hologram Rendering**    |   🟢 **Fixed**   | Remove the static black background around hologram text so only the text is visible                         |
+| **Dynamic Plant Shadows** | 🔴 **Not Fixed** | Make shadows for moving grass, flowers, leaves, and other plants move correctly instead of remaining static |
+
+### Status Legend
+
+* 🟢 **Fixed** — Completed
+* 🟡 **In Progress** — Currently being worked on
+* 🔴 **Not Fixed** — Still needs to be addressed
 
 # Features
 
