@@ -122,6 +122,9 @@ The original shader already looks excellent, but Reforged improves reflection qu
 <img width="49%" alt="2026-08-22_22 29 40" src="https://github.com/user-attachments/assets/54ed32da-046c-47df-81fb-6074c4a631f9" />
 <img width="49%" alt="2026-08-22_22 29 28" src="https://github.com/user-attachments/assets/8d1de113-437e-4ab2-974d-0a1000d07360" />
 
+<img width="49%" alt="2026-08-23_18 17 38" src="https://github.com/user-attachments/assets/511d0e87-7d6b-490d-bda8-2c6c3d045228" />
+<img width="49%" alt="2026-08-23_18 17 21" src="https://github.com/user-attachments/assets/83a55b31-2229-42c2-8fe2-379d59cb9e93" />
+
 ---
 
 # Requirements
