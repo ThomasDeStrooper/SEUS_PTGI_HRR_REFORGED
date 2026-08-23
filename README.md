@@ -28,8 +28,8 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 | ------------------------- | :--------------: | ----------------------------------------------------------------------------------------------------------- |
 | **Custom Moon**           | 🟢 **Fixed** | Implement a custom moon texture                                                                             |
 | **Entity Rendering**      | 🔴 **Not Fixed** | Improve moving entity rendering and reduce visual distortion                                                |
-| **Hologram Rendering**    | 🟢 **Fixed**   | Remove the static black background around hologram text so only the text is visible                         |
-| **Dynamic Plant Shadows** | 🔴 **Not Fixed** | Make shadows for moving grass, flowers, leaves, and other plants move correctly instead of remaining static |
+| **Hologram Rendering**    | 🟢 **Fixed** | Remove the static black background around hologram text so only the text is visible                         |
+| **Dynamic Plant Shadows** | 🟢 **Fixed** | Make shadows for moving grass, flowers, leaves, and other plants move correctly instead of remaining static |
 | **Fix Hand Ghosting with Motion Blur** | 🟡 **In Progress** | Fix ghosting artifacts that appear on hands when motion blur is enabled |
 
 ### Status Legend
@@ -44,6 +44,7 @@ Reforged introduces several configurable options directly inside the shader menu
 
 ### Visual
 
+* Held Item Lighting
 * Sun & Moon Reflections
 * Cloud Shadow
 * Moonlight Intensity
