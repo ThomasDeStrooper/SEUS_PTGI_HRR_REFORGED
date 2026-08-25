@@ -1,19 +1,38 @@
-By using the SEUS PTGI REFORGED patch, or the SEUS PTGI REFORGED shader for any purpose, you agree to all of the terms and conditions.
+# SEUS PTGI REFORGED Patch & Shader License Terms
 
-"The/This patch" means the jar patch used to extract the SEUS PTGI REFORGED shader. "The/This shader" means SEUS PTGI REFORGED shader.
+By using the **SEUS PTGI REFORGED patch** or the **SEUS PTGI REFORGED shader**, for any purpose whatsoever, you acknowledge and agree to all terms and conditions stated below.
 
-You can:
- - Using this patch to extract the SEUS PTGI REFORGED shader
- - Using this shader for gameplay, content creation, and live stream
- - Edit the patch and shader for you own use
- - Redistribute unedited version of the patch with me (GeForceLegend) clearly credited
- - Edit and redistribute the shader, with your own patch that not agianst SEUS' licence
- - Edit and directly redistribute block.properties and language file
+## Definitions
 
-You can't
- - Directly redistribute the shader but not the patch, neither edited nor not edited
- - Redistribute edited version of the patch
- - Claim this patch or this shader is your own work
- - Doing other thing agianst SEUS' licence
+For the purposes of these terms:
 
-Other purpose not clearly claimed should abide SEUS' licence. If it's still not claimed in SEUS' licence, it should be considered as All Right Reserved.
+* **“Patch”** refers to the `.zip` patch used to extract the SEUS PTGI REFORGED shader.
+* **“Shader”** refers specifically to the **SEUS PTGI REFORGED shader**.
+
+## Permitted Uses
+
+You are permitted to:
+
+* Use the Patch to extract the SEUS PTGI REFORGED Shader.
+* Use the Shader for gameplay, content creation, and livestreaming.
+* Modify the Patch and/or Shader for your own personal use.
+* Redistribute an **unedited** copy of the Patch, provided that **ThomasDeStrooper** is clearly and appropriately credited.
+* Modify and redistribute the Shader, provided that it is distributed together with your own Patch and that your Patch does not violate the SEUS license.
+* Modify and directly redistribute the `block.properties` and language files.
+
+## Prohibited Uses
+
+You are not permitted to:
+
+* Redistribute the Shader directly without also distributing the Patch, regardless of whether the Shader has been modified.
+* Redistribute a modified or edited version of the Patch.
+* Claim ownership or authorship of the Patch or Shader when you are not the original author.
+* Perform, authorize, or facilitate any other use that violates the SEUS license.
+
+## Unspecified Uses
+
+Any use that is **not explicitly permitted above** must comply with the applicable **SEUS license**.
+
+If a particular use is neither explicitly permitted by these terms nor addressed by the SEUS license, that use is considered **All Rights Reserved** and is therefore not permitted unless authorization is obtained from the appropriate rights holder.
+
+By using the Patch or Shader, you confirm that you have read, understood, and agreed to these terms.
