@@ -22,21 +22,13 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 ---
 
-## v2.3 Roadmap
+# <span style="color:red">🚨 BUG NOTICE 🚨</span>
 
-| Milestone                 |      Status      | Objective                                                                                                   |
-| ------------------------- | :--------------: | ----------------------------------------------------------------------------------------------------------- |
-| **Custom Moon**           | 🟢 **Fixed** | Implement a custom moon texture                                                                             |
-| **Entity Rendering**      | 🔴 **Not Fixed** | Improve moving entity rendering and reduce visual distortion                                                |
-| **Hologram Rendering**    | 🟢 **Fixed** | Remove the static black background around hologram text so only the text is visible                         |
-| **Dynamic Plant Shadows** | 🟢 **Fixed** | Make shadows for moving grass, flowers, leaves, and other plants move correctly instead of remaining static |
-| **Fix Hand Ghosting with Motion Blur** | 🟡 **In Progress** | Fix ghosting artifacts that appear on hands when motion blur is enabled |
+**GODRAYS ARE CURRENTLY SHINING THROUGH MOUNTAINS AND BUILDINGS FROM OUTSIDE.**
 
-### Status Legend
+We’re aware of the issue and are currently working on a fix.
 
-* 🟢 **Fixed** — Completed
-* 🟡 **In Progress** — Currently being worked on
-* 🔴 **Not Fixed** — Still needs to be addressed
+Thanks for your patience while we get it sorted out.
 
 # Features
 
