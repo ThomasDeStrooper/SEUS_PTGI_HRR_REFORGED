@@ -44,6 +44,8 @@ Reforged introduces several configurable options directly inside the shader menu
 
 ### Visual
 
+* Screenspace Reflection Intensity
+* Reflection Thickness Threshold
 * Water Reflection Sky Leak
 * Held Item Lighting
 * Sun & Moon Reflections
@@ -128,6 +130,9 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 <img width="49%" alt="2026-08-23_23 30 59" src="https://github.com/user-attachments/assets/e387290f-2d24-4c73-8d06-fa5b1cd9b249" />
 <img width="49%" alt="2026-08-23_23 30 33" src="https://github.com/user-attachments/assets/126d42fc-4898-47ac-9ef8-c03d4103f27d" />
+
+<img width="49%" alt="2026-08-25_13 04 08" src="https://github.com/user-attachments/assets/eb300513-310e-4820-a92d-a9f98e72da4a" />
+<img width="49%" alt="2026-08-25_13 03 54" src="https://github.com/user-attachments/assets/6bfe82c3-5129-4209-b702-4ce12a08bb84" />
 
 ---
 
