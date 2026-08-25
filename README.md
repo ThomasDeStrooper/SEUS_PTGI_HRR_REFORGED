@@ -12,9 +12,9 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 # Installation
 
-1. Install **OptiFine HD U G5+** or **Iris Shaders**.
-2. Download the **SEUS PTGI HRR 2.1 Reforged** from this repository.
-3. Download the original **SEUS PTGI HRR 2.1** shader from Sonic Ether's Patreon.
+1. Install **OptiFine HD U G5+** or **Iris**.
+2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm_source=chatgpt.com).
+3. Download the original **SEUS PTGI HRR 2.1** shader from [Sonic Ether's Patreon](https://www.patreon.com/sonicether/posts/download-seus-2-45141775?utm_source=chatgpt.com).
 4. Extract the SEUS PTGI HRR 2.1 Reforged ZIP.
 5. Place the original **SEUS PTGI HRR 2.1** ZIP inside the extracted folder. You can also simply drag and drop the **SEUS PTGI HRR 2.1** ZIP by Cody onto **Apply Patch.bat** if you prefer, so you don't need to double-click it first.
 6. Double-click **Apply Patch.bat**.
