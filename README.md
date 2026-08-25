@@ -148,8 +148,7 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 ### General
 
-* Custom block models from some resource packs may produce lighting artifacts.
-* Some PBR materials can appear brighter than intended in dark environments.
+* Ray Tracing Reflection "Tetris-Effect" Artifacts Due to Animated Foliage Shadows
 
 ### Compatibility
 
