@@ -37,6 +37,7 @@ Reforged introduces several configurable options directly inside the shader menu
 ### Visual
 
 * Screenspace Reflection Intensity
+* Selectable Sharpening Options
 * Reflection Thickness Threshold
 * Water Reflection Sky Leak
 * Held Item Lighting
