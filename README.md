@@ -39,8 +39,6 @@ Reforged introduces several configurable options directly inside the shader menu
 * Held Light Intensity
 * Rain Drop Screen Effect
 * Nametag Background Fix
-* Camera Sway
-* Hand Sway
 * Underwater Distortion Intensity
 * Underwater Distortion Speed Intensity
 * Wind Intensity Control
