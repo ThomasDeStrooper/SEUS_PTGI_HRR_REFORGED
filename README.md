@@ -22,14 +22,6 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 ---
 
-# <span style="color:red">🚨 BUG NOTICE 🚨</span>
-
-**GODRAYS ARE CURRENTLY SHINING THROUGH MOUNTAINS AND BUILDINGS FROM OUTSIDE.**
-
-We’re aware of the issue and are currently working on a fix.
-
-Thanks for your patience while we get it sorted out.
-
 # Features
 
 Reforged introduces several configurable options directly inside the shader menu.
