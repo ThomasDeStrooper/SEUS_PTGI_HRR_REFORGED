@@ -90,9 +90,6 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 **Original SEUS PTGI HRR 2.1** vs **SEUS PTGI HRR 2.1 Reforged**
 
-<img width="49%" alt="Original" src="https://github.com/user-attachments/assets/ca010aef-7549-4fd9-a28b-ac57d3bfc94f" />
-<img width="49%" alt="Reforged" src="https://github.com/user-attachments/assets/6d56c587-0696-4ead-ac02-0bbee680a9ea" />
-
 <img width="49%" alt="2026-08-05_15 35 18" src="https://github.com/user-attachments/assets/824bf962-dd80-4a1e-9f44-6eb1ed995ba9" />
 <img width="49%" alt="2026-08-05_15 35 32" src="https://github.com/user-attachments/assets/2368197f-a857-49d4-924c-7f89e76904cb" />
 
@@ -139,7 +136,7 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 ### General
 
-* Ray Tracing Reflection "Tetris-Effect" Artifacts Due to Animated Foliage Shadows
+* Light rays shine through buildings.
 
 ### Compatibility
 
