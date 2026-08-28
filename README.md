@@ -6,7 +6,7 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 > This project is created purely out of passion for the Minecraft shader community. It is not affiliated with or endorsed by Sonic Ether, and no money is made from this edit.
 
 > **Preserving the Original Look**
-> Unlike edits such as **SEUS PTGI HRR 2.1 GFME**, Reforged does **not** overhaul the shader or alter its signature lighting colors. Every enhancement is designed to blend seamlessly into the original experience while maintaining the exact atmosphere and visual identity of **SEUS PTGI HRR 2.1**.
+> Unlike edits such as **[SEUS PTGI HRR 2.1 GFME](https://github.com/GeForceLegend/SEUS_PTGI_GFME?utm_source=chatgpt.com)**, Reforged does **not** overhaul the shader or alter its signature lighting colors. Every enhancement is designed to blend seamlessly into the original experience while maintaining the exact atmosphere and visual identity of **SEUS PTGI HRR 2.1**.
 
 ---
 
@@ -113,6 +113,10 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 <img width="49%" alt="2026-08-25_13 04 08" src="https://github.com/user-attachments/assets/eb300513-310e-4820-a92d-a9f98e72da4a" />
 <img width="49%" alt="2026-08-25_13 03 54" src="https://github.com/user-attachments/assets/6bfe82c3-5129-4209-b702-4ce12a08bb84" />
+
+<img width="49%" alt="642913372-d9d8a47a-af9a-4eb1-9c95-e1177e8def5f" src="https://github.com/user-attachments/assets/1dd82c8b-4a33-43a5-879d-12a476de9604" />
+<img width="49%" alt="642913398-ee101662-242a-4194-b1ca-3cff6d16a9da" src="https://github.com/user-attachments/assets/1a11490e-a65a-410b-aeef-322f0db9b6b5" />
+
 
 ---
 
