@@ -28,6 +28,7 @@ Reforged introduces several configurable options directly inside the shader menu
 
 ### Visual
 
+* Held Light Shadows
 * Screenspace Reflection Intensity
 * Selectable Sharpening Options
 * Reflection Thickness Threshold
@@ -116,6 +117,9 @@ The original shader already looks excellent, but Reforged improves reflection qu
 
 <img width="49%" alt="642913372-d9d8a47a-af9a-4eb1-9c95-e1177e8def5f" src="https://github.com/user-attachments/assets/1dd82c8b-4a33-43a5-879d-12a476de9604" />
 <img width="49%" alt="642913398-ee101662-242a-4194-b1ca-3cff6d16a9da" src="https://github.com/user-attachments/assets/1a11490e-a65a-410b-aeef-322f0db9b6b5" />
+
+<img width="49%" alt="646897662-3702799a-4407-4563-bf9f-aeb1b526b187" src="https://github.com/user-attachments/assets/f4d869c5-29db-48c8-a13a-7ab841b2aa23" />
+<img width="49%" alt="646897670-b4e94baf-29d5-49cc-83f6-d5e0c9860984" src="https://github.com/user-attachments/assets/ed052f6d-2290-4dd9-b705-7aca9c1e4537" />
 
 
 ---
