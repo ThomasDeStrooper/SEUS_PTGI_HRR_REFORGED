@@ -10,7 +10,7 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 
 ---
 
-# This shader incorporates code from the [Photon](https://modrinth.com/shader/photon-shader) shader, specifically for the star effects and foliage wind animations. The original Photon license details are included within the shader file.
+# This shader incorporates code from the [Photon](https://modrinth.com/shader/photon-shader) shader, specifically for the star effects, aurora and foliage wind animations. The original Photon license details are included within the shader file.
 
 
 # Installation
