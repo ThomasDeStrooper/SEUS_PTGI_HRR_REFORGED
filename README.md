@@ -130,24 +130,12 @@ The shader menu includes additional options for things such as:
 * Held light shadows
 * Screenspace reflection intensity
 * Sharpening
-* Reflection thickness threshold
-* Water reflection sky leak
-* Held item lighting
-* Sun and moon reflections
 * Cloud shadows
 * Moonlight intensity
 * Held light intensity
 * Rain drop screen effect
-* Nametag background
 * Underwater distortion
-* Underwater distortion speed
 * Wind intensity
-* Stained sunlight
-* Godray stained-glass tint
-* Parallax depth
-* Rain splashes
-* Water wave height
-* Anisotropic LOD bias
 
 These options can be adjusted from the shader settings instead of requiring changes to the shader files themselves.
 
