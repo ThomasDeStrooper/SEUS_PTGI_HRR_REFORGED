@@ -1,10 +1,10 @@
 # SEUS PTGI HRR 2.1 Reforged
 
-A community-made edit of **Sonic Ether's SEUS PTGI HRR 2.1**, focused on improving image quality, adding more configuration options, fixing visual issues, and bringing in selected features from **Photon**.
+A community-made edit of **Sonic Ether's SEUS PTGI HRR 2.1**, focused on improving image quality and performance, adding more configuration options, fixing visual issues, and bringing in selected features from **Photon** alongside original features developed specifically for Reforged.
 
-Reforged is built around the original SEUS PTGI HRR 2.1 shader. It is not a shader made from scratch. The original SEUS shader provides the base, while Photon features and other community changes are added on top of it.
+Reforged is built around the original SEUS PTGI HRR 2.1 shader. It is not a shader made from scratch. The original SEUS shader provides the foundation, with selected Photon features and my own features and improvements added on top of it.
 
-The main goal of this project is to improve and extend SEUS PTGI HRR 2.1 without losing the look that made the original shader recognizable in the first place.
+The main goal of this project is to improve and extend SEUS PTGI HRR 2.1 while maintaining and enhancing its performance and without losing the look that made the original shader recognizable in the first place.
 
 > [!NOTE]
 > SEUS PTGI HRR 2.1 Reforged is an unofficial community edit. It is not affiliated with or endorsed by Sonic Ether.
