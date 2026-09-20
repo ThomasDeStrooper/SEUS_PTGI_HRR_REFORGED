@@ -308,16 +308,13 @@ The additional modifications, fixes, configuration options, and integration work
 
 ---
 
-# Disclaimer
-
-**SEUS PTGI HRR 2.1 Reforged is an unofficial community edit.**
-
-It is not affiliated with, sponsored by, or endorsed by Sonic Ether.
-
-The original SEUS PTGI HRR 2.1 shader is required to build Reforged. Please obtain it through its official distribution.
-
-Photon is also distributed separately and remains the property of its respective developers.
-
-This project does not redistribute the original SEUS PTGI HRR 2.1 shader.
-
----
+> [!IMPORTANT]
+> **Disclaimer: SEUS PTGI HRR 2.1 Reforged is an unofficial community edit.**
+>
+> It is not affiliated with, sponsored by, or endorsed by Sonic Ether.
+>
+> The original SEUS PTGI HRR 2.1 shader is required to build Reforged. Please obtain it through its official distribution.
+>
+> Photon is also distributed separately and remains the property of its respective developers.
+>
+> This project does not redistribute the original SEUS PTGI HRR 2.1 shader.
