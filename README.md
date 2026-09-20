@@ -5,23 +5,33 @@ An enhanced, community-driven refinement of **Sonic Ether's SEUS PTGI HRR 2.1** 
 > **Non-Commercial Project**
 > This project is created purely out of passion for the Minecraft shader community. It is not affiliated with or endorsed by Sonic Ether, and no money is made from this edit.
 
-> **Preserving the Original Look**
-> Unlike edits such as **[SEUS PTGI HRR 2.1 GFME](https://github.com/GeForceLegend/SEUS_PTGI_GFME?utm_source=chatgpt.com)**, Reforged does **not** overhaul the shader or alter its signature lighting colors. Every enhancement is designed to blend seamlessly into the original experience while maintaining the exact atmosphere and visual identity of **SEUS PTGI HRR 2.1**.
-
 ---
-
-# This shader incorporates code from the [Photon](https://modrinth.com/shader/photon-shader) shader, specifically for the star effects, aurora and foliage wind animations. The original Photon license details are included within the shader file.
-
 
 # Installation
 
+## Installation 1 — Manual Drag & Drop
+
 1. Install **OptiFine HD U G5+** or **Iris**.
 2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm_source=chatgpt.com).
-3. Download the original **SEUS PTGI HRR 2.1** shader from [Sonic Ether's Patreon](https://www.patreon.com/sonicether/posts/download-seus-2-45141775?utm_source=chatgpt.com).
-4. Extract the SEUS PTGI HRR 2.1 Reforged ZIP.
-5. Place the original **SEUS PTGI HRR 2.1** ZIP inside the extracted folder. You can also simply drag and drop the **SEUS PTGI HRR 2.1** ZIP by Cody onto **Apply Patch.bat** if you prefer, so you don't need to double-click it first.
-6. Double-click **Apply Patch.bat**.
-7. The patcher will automatically generate your final **SEUS PTGI HRR 2.1 Reforged** shader pack. The patcher will then ask whether you want to automatically install the generated shader into your shaderpacks folder. Enter **Y** for Yes or **N** for No.
+3. Download the original **SEUS PTGI HRR 2.1** from [Patreon](https://www.patreon.com/sonicether/posts/download-seus-2-45141775?utm_source=chatgpt.com) and **Photon v1.3b** from [Modrinth](https://modrinth.com/shader/photon-shader/versions).
+4. Extract the **SEUS PTGI HRR 2.1 Reforged** ZIP.
+5. Simply **drag and drop both the original SEUS PTGI HRR 2.1 ZIP and the Photon v1.3b ZIP onto `Apply Patch.bat`**.
+6. The patcher will automatically detect the two shader ZIPs and generate your final **SEUS PTGI HRR 2.1 Reforged** shader pack.
+7. The patcher will then ask whether you want to automatically install the generated shader into your shaderpacks folder. Enter **Y** for Yes or **N** for No. You can also simply **press Enter** to use the default option and automatically add the generated shader to your shaderpacks folder.
+
+## Installation 2 — Automatic File Search
+
+1. Install **OptiFine HD U G5+** or **Iris**.
+2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm_source=chatgpt.com).
+3. Download the original **SEUS PTGI HRR 2.1** from [Patreon](https://www.patreon.com/sonicether/posts/download-seus-2-45141775?utm_source=chatgpt.com) and **Photon v1.3b** from [Modrinth](https://modrinth.com/shader/photon-shader/versions).
+4. Extract the **SEUS PTGI HRR 2.1 Reforged** ZIP.
+5. Once you have downloaded the required shader files, you can **double-click `Apply Patch.bat`** without manually dragging the shaders onto it.
+6. The patcher will automatically search for the **SEUS PTGI HRR 2.1** and **Photon v1.3b** shader ZIPs in common locations, such as your **Downloads folder and Desktop**.
+7. If the patcher finds both shaders, it will automatically use them to generate your final **SEUS PTGI HRR 2.1 Reforged** shader pack.
+8. The patcher will then ask whether you want to automatically install the generated shader into your shaderpacks folder. Enter **Y** for Yes or **N** for No. You can also simply **press Enter** to use the default option and automatically add the generated shader to your shaderpacks folder.
+9. If the patcher cannot find one or both shader files, place them somewhere the patcher can find them and run **`Apply Patch.bat`** again.
+
+> If you have downloaded the same shader multiple times, Windows may automatically add (1), (2), etc. to the filename. For example, the file may be named SEUS PTGI HRR 2.1 (1).zip. If this happens, remove the (1) (or any other number in parentheses) from the filename so that it is named SEUS PTGI HRR 2.1.zip. Otherwise, the automatic file search may not recognize it.
 
 ---
 
