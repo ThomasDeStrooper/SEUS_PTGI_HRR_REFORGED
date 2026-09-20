@@ -241,19 +241,10 @@ The comparisons show some of the differences introduced by Reforged, particularl
 
 <tr>
 <td>
-<img src="https://github.com/user-attachments/assets/d912b5f3-e91c-4caa-a48b-cc4d0afff76b" />
+<img src="https://github.com/user-attachments/assets/68af4811-99b2-455f-8245-6bff252b2386" />
 </td>
 <td>
-<img src="https://github.com/user-attachments/assets/ded723e9-03ab-44cd-b79e-6b559139b3a4" />
-</td>
-</tr>
-
-<tr>
-<td>
-<img src="https://github.com/user-attachments/assets/0d896ab0-3a06-4a89-8f04-63d8b2328d34" />
-</td>
-<td>
-<img src="https://github.com/user-attachments/assets/1f9050b3-3a89-4cd?placeholder" />
+<img src="https://github.com/user-attachments/assets/64b3e821-2366-4260-ad10-cd05aff42c28" />
 </td>
 </tr>
 
