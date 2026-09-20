@@ -147,7 +147,6 @@ The shader menu includes additional options for things such as:
 * Parallax depth
 * Rain splashes
 * Water wave height
-* Shadow map resolution
 * Anisotropic LOD bias
 
 These options can be adjusted from the shader settings instead of requiring changes to the shader files themselves.
