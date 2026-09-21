@@ -200,15 +200,39 @@ The project is still based on SEUS PTGI HRR 2.1. Photon is used to extend what t
 
 # Feature Showcase
 
-These videos show some of the changes and features currently included in Reforged.
+This page showcases some of the visual changes and features currently included in **SEUS PTGI HRR 2.1 Reforged**.
 
-# Comparison
+All images below are screenshots taken in-game and are intended to highlight the visual differences introduced by Reforged.
 
-The images below were taken using the default shader settings.
+## Cloud Modes
 
-The original SEUS PTGI HRR 2.1 is on the left and Reforged is on the right.
+Reforged includes multiple cloud modes that can be switched directly from the shader menu.
 
-The comparisons show some of the differences introduced by Reforged, particularly around reflections, lighting, and other visual effects.
+The comparison below shows the difference between the standard cloud mode and **Photon Clouds**.
+
+<table>
+<tr>
+<th>SEUS PTGI HRR 2.1 Reforged</th>
+<th>SEUS PTGI HRR 2.1 Reforged — Photon Clouds</th>
+</tr>
+
+<tr>
+<td>
+<img src="https://github.com/user-attachments/assets/5bccf6d5-f4fc-4b96-8e14-41e53d3e69a9" width="500" />
+</td>
+<td>
+<img src="https://github.com/user-attachments/assets/c9b2e03d-4cbf-458b-9fe3-c29cbe3bef22" width="500" />
+</td>
+</tr>
+</table>
+
+## Comparison
+
+The screenshots below were taken using the **default shader settings**.
+
+The original **SEUS PTGI HRR 2.1** is shown on the left, while **SEUS PTGI HRR 2.1 Reforged** is shown on the right.
+
+These comparisons highlight some of the visual changes introduced by Reforged, including improvements to **reflections, lighting, clouds, and other visual effects**.
 
 <table>
 <tr>
