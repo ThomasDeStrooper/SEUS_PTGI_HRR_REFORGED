@@ -1,4 +1,29 @@
-# SEUS PTGI HRR 2.1 Reforged
+</a>
+</p>
+<h1 align="center"><b>SEUS PTGI HRR 2.1 Reforged</b></h1>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/4eab0a92-e2e3-47a3-b3af-764fcb32c97c" alt="preview" width="100%"/>
+</p>
+<p align="center">
+  <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">Latest release</a> |
+  <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/blob/main/LICENCE.txt">Copyright</a>
+</p>
+<div align="center">
+  <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">
+    <img src="https://img.shields.io/github/v/release/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED?style=flat-square&color=blue" alt="" />
+  </a>
+  <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">
+    <img src="https://img.shields.io/github/downloads/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/total?style=flat-square&color=blue" alt="" />
+  <a href="https://github.com/sponsors/ThomasDeStrooper">
+    <img src="https://img.shields.io/static/v1?label=Sponsor&style=flat-square&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86" alt="" />
+  </a>
+</div>
+
+<h5 align="center">
+Leave a star if you like the project! ⭐️
+</h5>
+
+# About
 
 A community-made edit of **Sonic Ether's SEUS PTGI HRR 2.1**, focused on improving image quality and performance, adding more configuration options, fixing visual issues, and bringing in selected features from **Photon** alongside original features developed specifically for Reforged.
 
