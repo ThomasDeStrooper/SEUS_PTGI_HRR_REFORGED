@@ -6,7 +6,7 @@
 </p>
 <p align="center">
   <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">Latest release</a> |
-  <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/blob/main/LICENCE.txt">Copyright</a>
+  <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/blob/main/LICENCE.txt">License</a>
 </p>
 <div align="center">
   <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">
