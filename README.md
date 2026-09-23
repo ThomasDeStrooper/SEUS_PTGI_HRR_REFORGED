@@ -40,6 +40,12 @@ This project is made for the Minecraft shader community and is not intended to g
 
 SEUS PTGI HRR 2.1 remains the work of **Sonic Ether**. Photon remains the work of its respective developers.
 
+<img width="1920" height="1080" alt="2026-09-23_20 26 30" src="https://github.com/user-attachments/assets/574e6191-c372-46e0-a2c8-994d302fd38a" />
+<img width="1920" height="1080" alt="2026-09-23_20 44 24" src="https://github.com/user-attachments/assets/40212cc6-71dc-4226-bae5-e1250f2a0f21" />
+<img width="1920" height="1080" alt="2026-09-23_20 24 41" src="https://github.com/user-attachments/assets/74b597e0-b266-41c9-b130-0a134d062282" />
+<img width="1920" height="1080" alt="2026-09-23_20 22 26" src="https://github.com/user-attachments/assets/c3e41284-4c41-4001-a517-943f743bc926" />
+<img width="1920" height="1080" alt="2026-09-23_20 43 47" src="https://github.com/user-attachments/assets/a18d22ba-0d5c-4e49-8df5-e9c7f3d13ab0" />
+
 ---
 
 # Installation
