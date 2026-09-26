@@ -2,7 +2,7 @@
 </p>
 <h1 align="center"><b>SEUS PTGI HRR 2.1 Reforged</b></h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/5f407604-623c-49e3-bc0f-a13cd564cb4a" alt="preview" width="100%"/>
+<img src="https://github.com/user-attachments/assets/455efc14-6766-402d-95e2-56e129a28acb" alt="preview" width="100%"/>
 </p>
 <p align="center">
   <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">Latest release</a> |
