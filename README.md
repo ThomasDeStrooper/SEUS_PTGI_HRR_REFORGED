@@ -43,8 +43,9 @@ SEUS PTGI HRR 2.1 remains the work of **Sonic Ether**. Photon remains the work o
 ---
 
 # Installation
+You can choose from two installation methods:
 
-## Installation 1 — Manual Drag & Drop
+## Installation 1 — Manual Drag & Drop (Recommended)
 
 1. Install **OptiFine HD U G5+** or **Iris**.
 2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm).
