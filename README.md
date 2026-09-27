@@ -47,7 +47,7 @@ SEUS PTGI HRR 2.1 remains the work of **Sonic Ether**. Photon remains the work o
 ## Installation 1 — Manual Drag & Drop
 
 1. Install **OptiFine HD U G5+** or **Iris**.
-2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm_source=chatgpt.com).
+2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm).
 3. Download the original **SEUS PTGI HRR 2.1** from [Patreon](https://www.patreon.com/file?h=45141775&m=88959035) and **Photon v1.3b** from [Modrinth](https://cdn.modrinth.com/data/lLqFfGNs/versions/gUv7fBPN/photon_v1.3b.zip?mr_download_reason=standalone).
 4. Extract the **SEUS PTGI HRR 2.1 Reforged** ZIP.
 5. Simply **drag and drop both the original SEUS PTGI HRR 2.1 ZIP and the Photon v1.3b ZIP onto `Apply Patch.bat`**.
