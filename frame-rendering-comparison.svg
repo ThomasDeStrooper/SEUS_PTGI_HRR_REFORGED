@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="704" height="432" viewBox="0 0 704 432">
+<rect width="704" height="432" fill="#1f2027"/>
+<rect x="28" y="15" width="652" height="400" rx="16" fill="#25262d"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="44" y="46" font-size="15" font-weight="bold" fill="#f1f2f5">Frame Rendering Time Comparison (Lower is Better)</text>
+<g stroke="#393a42" stroke-width="1">
+<line x1="112" y1="68" x2="664" y2="68"/><line x1="112" y1="103" x2="664" y2="103"/>
+<line x1="112" y1="138" x2="664" y2="138"/><line x1="112" y1="173" x2="664" y2="173"/>
+<line x1="112" y1="208" x2="664" y2="208"/><line x1="112" y1="243" x2="664" y2="243"/>
+<line x1="112" y1="278" x2="664" y2="278"/><line x1="112" y1="313" x2="664" y2="313"/>
+<line x1="112" y1="348" x2="664" y2="348"/>
+</g>
+<g fill="#b8bac4" font-size="12" text-anchor="end">
+<text x="103" y="72">16 ms</text><text x="103" y="107">14 ms</text>
+<text x="103" y="142">12 ms</text><text x="103" y="177">10 ms</text>
+<text x="103" y="212">8 ms</text><text x="103" y="247">6 ms</text>
+<text x="103" y="282">4 ms</text><text x="103" y="317">2 ms</text>
+<text x="103" y="352">0 ms</text>
+</g>
+<text x="58" y="208" transform="rotate(-90 58 208)" font-size="12" font-weight="bold" fill="#b8bac4" text-anchor="middle">Frame Time (ms)</text>
+<rect x="151.5" y="114.2" width="198.5" height="233.8" rx="8" fill="#5b8af7"/>
+<rect x="427" y="165.4" width="198.5" height="182.6" rx="8" fill="#5b8af7"/>
+<g fill="#c6c7cf" font-size="11" text-anchor="middle">
+<text x="250.75" y="102">13.33 ms</text><text x="526.25" y="153">10.42 ms</text>
+</g>
+<g fill="#b8bac4" font-size="12" text-anchor="middle">
+<text x="250.75" y="370">Old Performance (75 FPS)</text>
+<text x="526.25" y="370">New Performance (96 FPS)</text>
+</g>
+<text x="388" y="391" font-size="12" font-weight="bold" fill="#b8bac4" text-anchor="middle">Setup (Target FPS)</text>
+</g></svg>
