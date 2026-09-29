@@ -40,6 +40,11 @@ SEUS PTGI HRR 2.1 remains the work of **Sonic Ether**. Photon remains the work o
 
 ---
 
+# Performance
+A comparison chart between the two shaders. Please note that these benchmarks were captured in a random location, so the FPS values serve as an example.
+
+![Frame Rendering Time Comparison](./frame-rendering-comparison.svg)
+
 # Installation
 You can choose from two installation methods:
 
