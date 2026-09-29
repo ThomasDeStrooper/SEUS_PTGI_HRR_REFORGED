@@ -24,8 +24,8 @@
 <text x="250.75" y="102">13.33 ms</text><text x="526.25" y="153">10.42 ms</text>
 </g>
 <g fill="#b8bac4" font-size="12" text-anchor="middle">
-<text x="250.75" y="370">Old Performance (75 FPS)</text>
-<text x="526.25" y="370">New Performance (96 FPS)</text>
+<text x="250.75" y="370">SEUS PTGI HRR 2.1 (75 FPS)</text>
+<text x="526.25" y="370">SEUS PTGI HRR 2.1 Reforged (96 FPS)</text>
 </g>
 <text x="388" y="391" font-size="12" font-weight="bold" fill="#b8bac4" text-anchor="middle">Setup (Target FPS)</text>
 </g></svg>
