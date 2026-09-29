@@ -258,11 +258,7 @@ The original **SEUS PTGI HRR 2.1** shader and its underlying work were created b
 
 ### Photon
 
-Reforged incorporates selected features from **Photon**. Photon is developed separately from this project.
-
-### Reforged
-
-The additional modifications, fixes, configuration options, and integration work in this project are maintained by the Reforged community.
+The original **Photon** shader and its underlying work were created by **sixthsurge**.
 
 ---
 
@@ -275,4 +271,4 @@ The additional modifications, fixes, configuration options, and integration work
 >
 > Photon is also distributed separately and remains the property of its respective developers.
 >
-> This project does not redistribute the original SEUS PTGI HRR 2.1 shader.
+> This project does not redistribute the original SEUS PTGI HRR 2.1 and Photon shaders.
