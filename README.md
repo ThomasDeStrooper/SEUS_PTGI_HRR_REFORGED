@@ -23,6 +23,8 @@
 Leave a star if you like the project! ⭐️
 </h5>
 
+<h5 align="center"><mark>Shader supports Physics Mod (Distant Horizons support coming soon)</mark>
+
 # About
 
 A community made edit of **Sonic Ether's SEUS PTGI HRR 2.1**, focused on improving image quality and performance, adding more configuration options, fixing visual issues, and bringing in selected features from **Photon** alongside original features developed specifically for Reforged.
