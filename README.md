@@ -2,7 +2,7 @@
 </p>
 <h1 align="center"><b>SEUS PTGI HRR 2.1 Reforged</b></h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/455efc14-6766-402d-95e2-56e129a28acb" alt="preview" width="100%"/>
+<img src="https://github.com/user-attachments/assets/88f9fff8-aa75-426b-9468-1397dcce96a1" alt="preview" width="100%"/>
 </p>
 <p align="center">
   <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">Latest release</a> |
@@ -54,7 +54,7 @@ You can choose from two installation methods:
 
 1. Install **OptiFine HD U G5+** or **Iris**.
 2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm).
-3. Download the original **SEUS PTGI HRR 2.1** from [Patreon](https://www.patreon.com/file?h=45141775&m=88959035) and **Photon v1.3b** from [Modrinth](https://cdn.modrinth.com/data/lLqFfGNs/versions/gUv7fBPN/photon_v1.3b.zip?mr_download_reason=standalone).
+3. Download the original **SEUS PTGI HRR 2.1** from [Patreon](https://www.patreon.com/file?h=45141775&m=88959035), **Bliss v2.1.2** from [Modrinth](https://cdn.modrinth.com/data/ZvMtQlho/versions/kC2Y8q1P/Bliss_v2.1.2_%28Chocapic13_Shaders_edit%29.zip?mr_download_reason=standalone) and **Photon v1.3b** from [Modrinth](https://cdn.modrinth.com/data/lLqFfGNs/versions/gUv7fBPN/photon_v1.3b.zip?mr_download_reason=standalone).
 4. Extract the **SEUS PTGI HRR 2.1 Reforged** ZIP.
 5. Simply **drag and drop both the original SEUS PTGI HRR 2.1 ZIP and the Photon v1.3b ZIP onto `Apply Patch.bat`**.
 6. The patcher will automatically detect the two shader ZIPs and generate your final **SEUS PTGI HRR 2.1 Reforged** shader pack.
@@ -64,7 +64,7 @@ You can choose from two installation methods:
 
 1. Install **OptiFine HD U G5+** or **Iris**.
 2. Download the **SEUS PTGI HRR 2.1 Reforged** from this [repository](https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases?utm).
-3. Download the original **SEUS PTGI HRR 2.1** from [Patreon](https://www.patreon.com/file?h=45141775&m=88959035) and **Photon v1.3b** from [Modrinth](https://cdn.modrinth.com/data/lLqFfGNs/versions/gUv7fBPN/photon_v1.3b.zip?mr_download_reason=standalone).
+3. Download the original **SEUS PTGI HRR 2.1** from [Patreon](https://www.patreon.com/file?h=45141775&m=88959035), **Bliss v2.1.2** from [Modrinth](https://cdn.modrinth.com/data/ZvMtQlho/versions/kC2Y8q1P/Bliss_v2.1.2_%28Chocapic13_Shaders_edit%29.zip?mr_download_reason=standalone) and **Photon v1.3b** from [Modrinth](https://cdn.modrinth.com/data/lLqFfGNs/versions/gUv7fBPN/photon_v1.3b.zip?mr_download_reason=standalone).
 4. Extract the **SEUS PTGI HRR 2.1 Reforged** ZIP.
 5. Once you have downloaded the required shader files, you can **double-click `Apply Patch.bat`** without manually dragging the shaders onto it.
 6. The patcher will automatically search for the **SEUS PTGI HRR 2.1** and **Photon v1.3b** shader ZIPs in common locations, such as your **Downloads folder and Desktop**.
@@ -73,35 +73,11 @@ You can choose from two installation methods:
 9. The patcher will then ask whether you want to automatically install the generated shader into your shaderpacks folder. Enter **Y** for Yes or **N** for No. You can also simply **press Enter** to use the default option and automatically add the generated shader to your shaderpacks folder.
 10. If the patcher cannot find one or both shader files, make sure the filenames are correct and place them somewhere the patcher can find them, then run **`Apply Patch.bat`** again.
 
-### File names
-
-The automatic search expects the original shader to be named:
-
-```text
-SEUS PTGI HRR 2.1.zip
-```
-
-If Windows has renamed it to something like:
-
-```text
-SEUS PTGI HRR 2.1 (1).zip
-```
-
-remove the `(1)` so the filename is:
-
-```text
-SEUS PTGI HRR 2.1.zip
-```
-
-The same applies if Windows has added another number to the filename.
-
----
-
 # Integrity and Verification
 
 The patcher performs several checks before and during the patching process to make sure the shader files are not modified or corrupted.
 
-The clean **SEUS PTGI HRR 2.1** pack and **Photon v1.3b** are both verified using **SHA-256** before patching begins.
+The clean **SEUS PTGI HRR 2.1** pack, **Bliss v2.1.2** and **Photon v1.3b** are both verified using **SHA-256** before patching begins.
 
 The original SEUS and Photon shader files are **not redistributed by the patcher**. You provide the required files yourself, and the patcher only works with the copies on your system.
 
