@@ -238,6 +238,10 @@ The original **SEUS PTGI HRR 2.1** shader and its underlying work were created b
 
 The original **Photon** shader and its underlying work were created by **sixthsurge**.
 
+### Bliss
+
+The original **Bliss** shader and its underlying work were created by **Xonk**.
+
 ---
 
 > [!IMPORTANT]
@@ -247,6 +251,6 @@ The original **Photon** shader and its underlying work were created by **sixthsu
 >
 > The original SEUS PTGI HRR 2.1 shader is required to build Reforged. Please obtain it through its official distribution.
 >
-> Photon is also distributed separately and remains the property of its respective developers.
+> Photon & Bliss is also distributed separately and remains the property of its respective developers.
 >
 > This project does not redistribute the original SEUS PTGI HRR 2.1 and Photon shaders.
