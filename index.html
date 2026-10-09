@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0f">
+  <meta name="description" content="SEUS PTGI HRR 2.1 Reforged — a community-made shader edit focused on image quality, performance, and expanded customization.">
+  <title>SEUS PTGI HRR 2.1 Reforged — Minecraft Shader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080a0f;
+      --panel: rgba(18, 22, 31, .76);
+      --panel-solid: #11151e;
+      --line: rgba(255,255,255,.095);
+      --muted: #a2aaba;
+      --text: #f5f7fb;
+      --accent: #8b7aff;
+      --accent2: #65a9ff;
+      --max: 1160px;
+      --hero-glow: rgba(104,96,255,.12);
+      --radial-bg: radial-gradient(ellipse at 50% -10%, rgba(98, 92, 202, .17), transparent 48%);
+    }
+
+    [data-theme="light"] {
+      color-scheme: light;
+      --bg: #f4f6fb;
+      --panel: rgba(255, 255, 255, .85);
+      --panel-solid: #ffffff;
+      --line: rgba(0,0,0,.08);
+      --muted: #576075;
+      --text: #111827;
+      --accent: #6d5efc;
+      --accent2: #2575fc;
+      --hero-glow: rgba(109,94,252,.08);
+      --radial-bg: radial-gradient(ellipse at 50% -10%, rgba(109, 94, 252, .1), transparent 48%);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: "DM Sans", system-ui, sans-serif; line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      background-image: var(--radial-bg);
+      transition: background .3s ease, color .3s ease;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 44px)); margin: 0 auto; }
+    .nav {
+      position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line);
+      background: var(--panel); backdrop-filter: blur(20px);
+      transition: background .3s ease, border-color .3s ease;
+    }
+    .nav-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-family: Manrope, sans-serif; font-weight: 800; letter-spacing: -.04em; }
+    .brand-mark {
+      width: 35px; height: 35px; display: grid; place-items: center; border-radius: 11px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2)); color: white; font-size: 17px;
+      box-shadow: 0 6px 28px rgba(110, 103, 255, .25);
+    }
+    .brand small { display: block; color: var(--muted); font: 500 10px "DM Sans", sans-serif; letter-spacing: .13em; text-transform: uppercase; margin-top: -4px; }
+    .nav-links { display: flex; align-items: center; gap: 24px; color: var(--muted); font-size: 13px; }
+    .nav-links a:hover, .text-link:hover { color: var(--text); }
+    .nav-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: var(--panel-solid); }
+    .github-icon { width: 16px; height: 16px; fill: currentColor; display: inline-block; vertical-align: middle; }
+    
+    /* Theme Toggle Button */
+    .theme-toggle {
+      background: var(--panel-solid);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      color: var(--text);
+      transition: transform .2s, background .2s, border-color .2s;
+    }
+    .theme-toggle:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .theme-toggle svg { width: 18px; height: 18px; fill: currentColor; }
+    [data-theme="light"] .icon-moon { display: block; }
+    [data-theme="light"] .icon-sun { display: none; }
+    :root:not([data-theme="light"]) .icon-moon { display: none; }
+    :root:not([data-theme="light"]) .icon-sun { display: block; }
+
+    .hero { position: relative; padding: 88px 0 70px; overflow: hidden; }
+    .hero:before { content:""; position:absolute; width:620px; height:620px; left:50%; top:-250px; transform:translateX(-50%); border-radius:50%; background:var(--hero-glow); filter:blur(90px); pointer-events:none; }
+    .hero-content { position: relative; text-align: center; max-width: 900px; margin: 0 auto; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel-solid); color: var(--muted); font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+    .dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 13px var(--accent); }
+    h1,h2,h3,h4 { font-family: Manrope, "DM Sans", sans-serif; letter-spacing: -.045em; line-height: 1.12; color: var(--text); }
+    h1 { font-size: clamp(42px, 7vw, 76px); margin: 24px 0 19px; font-weight: 800; }
+    .gradient { background: linear-gradient(100deg, var(--text) 20%, var(--accent) 56%, var(--accent2) 100%); color: transparent; background-clip: text; -webkit-background-clip: text; }
+    .hero p { color: var(--muted); max-width: 660px; margin: 0 auto; font-size: clamp(15px, 1.8vw, 18px); }
+    .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 19px; border-radius: 12px; font-size: 13px; font-weight: 700; transition: transform .2s, border-color .2s, background .2s; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { color: #fff; background: linear-gradient(110deg, var(--accent), var(--accent2)); box-shadow: 0 9px 30px rgba(101,112,255,.22); }
+    .btn-secondary { border: 1px solid var(--line); background: var(--panel-solid); color: var(--text); }
+    .btn-secondary:hover { background: var(--panel); border-color: var(--accent); }
+    .hero-meta { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 27px; color: var(--muted); font-size: 12px; }
+    .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
+    .preview-frame { position: relative; margin: 54px auto 0; max-width: 1050px; border: 1px solid var(--line); border-radius: 19px; padding: 7px; background: var(--panel); box-shadow: 0 35px 100px rgba(0,0,0,.15); }
+    .preview-frame:after { content:""; position:absolute; inset:0; border-radius:19px; pointer-events:none; box-shadow: inset 0 0 0 1px var(--line); }
+    .preview-frame img { display:block; width:100%; aspect-ratio: 16/7; object-fit:cover; object-position:center; border-radius:13px; background:var(--panel-solid); }
+    .section { padding: 78px 0; }
+    .section-head { max-width: 660px; margin-bottom: 30px; }
+    .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: .15em; font-size: 11px; font-weight: 700; }
+    h2 { font-size: clamp(30px, 4vw, 44px); margin: 10px 0 12px; }
+    .section-head p, .muted { color: var(--muted); margin: 0; }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .feature, .panel { border: 1px solid var(--line); background: var(--panel); border-radius: 17px; }
+    .feature { padding: 23px; min-height: 190px; }
+    .feature-icon { display:grid; place-items:center; width:40px; height:40px; border-radius:12px; color:var(--accent); background:rgba(139,122,255,.1); border:1px solid var(--line); font-size:18px; }
+    h3 { font-size: 17px; letter-spacing: -.025em; margin: 19px 0 8px; }
+    .feature p { font-size: 13px; color: var(--muted); margin: 0; }
+    .install-layout { display:grid; grid-template-columns: .8fr 1.2fr; gap: 28px; align-items:start; }
+    .install-intro { position: sticky; top: 105px; }
+    .install-intro .btn { margin-top: 22px; }
+    .steps { padding: 10px 24px; }
+    .step { display:grid; grid-template-columns: 36px 1fr; gap: 15px; padding: 19px 0; border-bottom: 1px solid var(--line); }
+    .step:last-child { border-bottom:0; }
+    .num { width: 32px; height:32px; display:grid; place-items:center; border-radius:10px; border:1px solid var(--line); background:var(--panel-solid); color:var(--accent); font-size:12px; font-weight:700; }
+    .step h3 { margin: 2px 0 5px; font-size:15px; }
+    .step p { margin:0; color:var(--muted); font-size:13px; }
+    .step a, .text-link { color:var(--accent); text-decoration: underline; text-decoration-color:rgba(139,122,255,.4); text-underline-offset:3px; }
+    .notice { margin-top: 18px; padding: 15px 17px; border: 1px solid var(--line); background: var(--panel-solid); border-radius: 12px; color: var(--muted); font-size:12px; }
+    .specs { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
+    .spec { padding:19px; border:1px solid var(--line); border-radius:14px; background:var(--panel); }
+    .spec span { display:block; color:var(--muted); font-size:11px; margin-bottom:8px; }
+    .spec strong { font-family:Manrope,sans-serif; font-size:15px; }
+    .callout { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:32px; border:1px solid var(--line); border-radius:20px; background:var(--panel); }
+    .callout h2 { margin:0 0 8px; font-size:clamp(25px,3vw,34px); }
+    .callout p { margin:0; color:var(--muted); font-size:13px; }
+    .credits { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .credit { padding:20px; border:1px solid var(--line); border-radius:14px; background:var(--panel); }
+    .credit strong { display:block; font-family:Manrope,sans-serif; margin-bottom:5px; }
+    .credit span { color:var(--muted); font-size:12px; }
+
+    /* License Section Styling */
+    .license-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
+    .license-card { padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel-solid); }
+    .license-card h4 { margin: 0 0 12px; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+    .license-card ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 13px; }
+    .license-card li { margin-bottom: 8px; }
+    .license-card li:last-child { margin-bottom: 0; }
+    .license-notice { margin-top: 16px; padding: 20px; border-radius: 14px; border: 1px solid var(--line); background: var(--panel-solid); font-size: 13px; color: var(--muted); }
+    .code-inline { background: var(--panel); padding: 2px 6px; border-radius: 4px; color: var(--accent); font-family: monospace; font-size: 12px; border: 1px solid var(--line); }
+
+    footer { border-top:1px solid var(--line); padding:26px 0 34px; color:var(--muted); font-size:11px; background: var(--panel); transition: background .3s ease; }
+    .footer-inner { display:flex; justify-content:space-between; gap:18px; align-items:center; }
+    .footer-links { display:flex; gap:18px; flex-wrap:wrap; align-items:center; }
+    .footer-links a:hover { color:var(--text); }
+    @media (max-width: 760px) {
+      .nav-inner { min-height:65px; } .nav-links { gap:14px; } .nav-links a:not(.nav-cta) { display:none; }
+      .hero { padding:66px 0 48px; } .preview-frame { margin-top:38px; } .preview-frame img { aspect-ratio: 4/3; }
+      .section { padding:55px 0; } .grid, .license-grid { grid-template-columns:1fr; } .install-layout { grid-template-columns:1fr; }
+      .install-intro { position:static; } .specs { grid-template-columns:1fr 1fr; } .callout { align-items:flex-start; flex-direction:column; padding:25px; } .credits { grid-template-columns:1fr; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width:calc(100% - 30px); } .brand { font-size:13px; } .brand small { font-size:9px; }
+      .grid { grid-template-columns:1fr; } .feature { min-height:0; } .hero-meta { gap:12px; }
+      .btn { width:100%; } .actions { width:100%; } .footer-inner { align-items:flex-start; flex-direction:column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html {scroll-behavior:auto} *,*:before,*:after {transition:none!important; animation:none!important} }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Reforged home">
+        <span class="brand-mark">R</span>
+        <span>REFORGED<small>Shader Project</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#installation">Installation</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#license">License</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Wissel thema">
+          <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-3.37.73 8.15 8.15 0 0 1-8.15-8.15 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8.36 2.1a10.14 10.14 0 1 0 13.42 12.1 1 1 0 0 0-.14-1.2z"/></svg>
+        </button>
+        <a class="nav-cta" href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED" target="_blank" rel="noopener">
+          <svg class="github-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-content">
+        <div class="eyebrow"><span class="dot"></span> A community-made shader edit</div>
+        <h1><span class="gradient">SEUS PTGI HRR 2.1</span><br>Reforged</h1>
+        <p>Refined lighting. Richer reflections. More control. Built on the original SEUS PTGI HRR 2.1, enhanced with selected Photon features and improvements made specifically for Reforged.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">↓ &nbsp; Get the latest release</a>
+          <a class="btn btn-secondary" href="#installation">Installation guide &nbsp; ↘</a>
+        </div>
+        <div class="hero-meta">
+          <span>✦ OptiFine &amp; Iris</span><span>✦ Physics Mod support</span><span>✦ Customizable shader menu</span>
+        </div>
+        <div class="preview-frame">
+          <img src="https://github.com/user-attachments/assets/88f9fff8-aa75-426b-9468-1397dcce96a1" alt="SEUS PTGI HRR 2.1 Reforged in-game preview">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Made to feel familiar. Built to go further.</div>
+          <h2>The SEUS atmosphere, refined.</h2>
+          <p>Reforged keeps the original shader as its foundation while improving visual quality, performance, and customization.</p>
+        </div>
+        <div class="grid">
+          <article class="feature"><div class="feature-icon">◈</div><h3>Enhanced Visuals</h3><p>Refined reflections, lighting, clouds, and atmospheric effects for a richer in-game image.</p></article>
+          <article class="feature"><div class="feature-icon">⌘</div><h3>More Control</h3><p>Additional shader-menu options let you tailor visual effects to your own preferences.</p></article>
+          <article class="feature"><div class="feature-icon">↗</div><h3>Performance Focus</h3><p>Targeted optimizations and adjustable settings help balance image quality with frame rate.</p></article>
+          <article class="feature"><div class="feature-icon">☼</div><h3>Cloud Choices</h3><p>Switch between the Reforged cloud mode and Photon Clouds directly in the shader menu.</p></article>
+          <article class="feature"><div class="feature-icon">✧</div><h3>Selected Photon Features</h3><p>Carefully integrated Photon features sit alongside changes developed specifically for Reforged.</p></article>
+          <article class="feature"><div class="feature-icon">▧</div><h3>Physics Mod Support</h3><p>Designed to work with the Physics Mod. Distant Horizons support is planned for a future update.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="installation">
+      <div class="wrap install-layout">
+        <div class="install-intro">
+          <div class="kicker">Get started</div>
+          <h2>Up and running in a few steps.</h2>
+          <p class="muted">Use the included patcher to build your Reforged shader pack from the required shader files. The original SEUS and Photon ZIPs are supplied by you, not redistributed here.</p>
+          <a class="btn btn-primary" href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">Download Reforged ↗</a>
+          <div class="notice"><strong>Before you start:</strong> Install OptiFine HD U G5+ or Iris, then obtain the required shader files from their respective sources.</div>
+        </div>
+        <div class="panel steps">
+          <div class="step"><div class="num">01</div><div><h3>Download Reforged</h3><p>Get the latest release from the <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">GitHub Releases page</a> and extract the ZIP.</p></div></div>
+          <div class="step"><div class="num">02</div><div><h3>Get the required shader files</h3><p>Download <a href="https://www.patreon.com/file?h=45141775&amp;m=88959035">SEUS PTGI HRR 2.1</a>, <a href="https://cdn.modrinth.com/data/ZvMtQlho/versions/kC2Y8q1P/Bliss_v2.1.2_%28Chocapic13_Shaders_edit%29.zip?mr_download_reason=standalone">Bliss v2.1.2</a>, and <a href="https://cdn.modrinth.com/data/lLqFfGNs/versions/gUv7fBPN/photon_v1.3b.zip?mr_download_reason=standalone">Photon v1.3b</a> from their respective sources.</p></div></div>
+          <div class="step"><div class="num">03</div><div><h3>Run Apply Patch</h3><p>For the simplest method, double-click <strong>Apply Patch.bat</strong>. You can also drag the original SEUS and Photon ZIP files onto it.</p></div></div>
+          <div class="step"><div class="num">04</div><div><h3>Let the patcher do the work</h3><p>The patcher searches for the required files, verifies them, and generates your Reforged shader pack. If asked to install it automatically, press <strong>Enter</strong> to accept the default.</p></div></div>
+          <div class="step"><div class="num">05</div><div><h3>Enable the shader in Minecraft</h3><p>Place the generated ZIP in your shaderpacks folder if it was not installed automatically, then select it in your shader settings.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="requirements">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Compatibility</div>
+          <h2>What you'll need.</h2>
+          <p>These are general recommendations, not strict minimums. Actual performance depends on resolution, render distance, settings, and the rest of your system.</p>
+        </div>
+        <div class="specs">
+          <div class="spec"><span>Minecraft</span><strong>1.16.4 or newer</strong></div>
+          <div class="spec"><span>Shader loader</span><strong>OptiFine G5+ / Iris</strong></div>
+          <div class="spec"><span>Minimum GPU guide</span><strong>NVIDIA RTX 2050</strong></div>
+          <div class="spec"><span>Recommended GPU guide</span><strong>NVIDIA RTX 3060</strong></div>
+        </div>
+        <div class="notice">Compatibility note: NVIDIA GPUs are currently the main tested hardware. Some visual issues or occasional crashes may occur on AMD; Intel GPU compatibility is not guaranteed. Light rays may sometimes shine through buildings or other geometry.</div>
+      </div>
+    </section>
+
+    <!-- License Terms Section -->
+    <section class="section" id="license">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Legal Terms</div>
+          <h2>SEUS PTGI REFORGED Patch &amp; Shader License Terms</h2>
+          <p>By using the <strong>SEUS PTGI REFORGED patch</strong> or the <strong>SEUS PTGI REFORGED shader</strong>, for any purpose whatsoever, you acknowledge and agree to all terms and conditions stated below.</p>
+        </div>
+
+        <div class="panel" style="padding: 28px;">
+          <div style="margin-bottom: 24px;">
+            <h3 style="margin-top: 0;">Definitions</h3>
+            <p class="muted" style="font-size: 14px;">
+              • <strong>“Patch”</strong> refers to the <span class="code-inline">.zip</span> patch used to extract the SEUS PTGI REFORGED shader.<br>
+              • <strong>“Shader”</strong> refers specifically to the <strong>SEUS PTGI REFORGED shader</strong>.
+            </p>
+          </div>
+
+          <div class="license-grid">
+            <div class="license-card">
+              <h4 style="color: var(--accent);">✓ Permitted Uses</h4>
+              <ul>
+                <li>Use the Patch to extract the SEUS PTGI REFORGED Shader.</li>
+                <li>Use the Shader for gameplay, content creation, and livestreaming.</li>
+                <li>Modify the Patch and/or Shader for your own personal use.</li>
+                <li>Redistribute an <strong>unedited</strong> copy of the Patch, provided that <strong>ThomasDeStrooper</strong> is clearly and appropriately credited.</li>
+                <li>Modify and redistribute the Shader, provided that it is distributed together with your own Patch and that your Patch does not violate the SEUS license.</li>
+                <li>Modify and directly redistribute the <span class="code-inline">block.properties</span> and language files.</li>
+              </ul>
+            </div>
+
+            <div class="license-card">
+              <h4 style="color: #e5534b;">✕ Prohibited Uses</h4>
+              <ul>
+                <li>Redistribute the Shader directly without also distributing the Patch, regardless of whether the Shader has been modified.</li>
+                <li>Redistribute a modified or edited version of the Patch.</li>
+                <li>Claim ownership or authorship of the Patch or Shader when you are not the original author.</li>
+                <li>Perform, authorize, or facilitate any other use that violates the SEUS license.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="license-notice">
+            <h4 style="margin: 0 0 8px 0; color: var(--text);">Unspecified Uses</h4>
+            <p style="margin: 0 0 10px 0;">Any use that is <strong>not explicitly permitted above</strong> must comply with the applicable <strong>SEUS license</strong>.</p>
+            <p style="margin: 0;">If a particular use is neither explicitly permitted by these terms nor addressed by the SEUS license, that use is considered <strong>All Rights Reserved</strong> and is therefore not permitted unless authorization is obtained from the appropriate rights holder.</p>
+          </div>
+
+          <p style="margin: 20px 0 0 0; text-align: center; font-size: 12px;" class="muted">
+            By using the Patch or Shader, you confirm that you have read, understood, and agreed to these terms.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="callout">
+          <div><h2>Ready to see Reforged in-game?</h2><p>Get the latest version, check the source, and follow development on GitHub.</p></div>
+          <a class="btn btn-primary" href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">Explore releases ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="credits">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Built on the work of others</div><h2>Credits &amp; transparency.</h2><p>Reforged is an unofficial, non-commercial community edit. It is not made from scratch and is not affiliated with or endorsed by the original creators.</p></div>
+        <div class="credits">
+          <div class="credit"><strong>Sonic Ether</strong><span>Creator of the original SEUS PTGI HRR 2.1 shader and its underlying work.</span></div>
+          <div class="credit"><strong>sixthsurge</strong><span>Creator of the original Photon shader.</span></div>
+          <div class="credit"><strong>Xonk</strong><span>Creator of the original Bliss shader.</span></div>
+        </div>
+        <p class="muted" style="font-size:12px;margin-top:20px">The original SEUS PTGI HRR 2.1 shader is required to build Reforged. SEUS, Photon, and Bliss are distributed separately and remain the property of their respective developers. This project does not redistribute the original SEUS or Photon shaders.</p>
+        <p style="font-size:12px">
+          <a class="text-link" href="#license">Read the project license ↗</a> &nbsp;·&nbsp; 
+          <a class="text-link" href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED" target="_blank" rel="noopener">
+            <svg class="github-icon" viewBox="0 0 24 24" style="width:12px; height:12px; margin-right:2px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Source code ↗
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© SEUS PTGI HRR 2.1 Reforged · Unofficial community project</span>
+      <div class="footer-links">
+        <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/releases">Releases</a>
+        <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED/issues">Report an issue</a>
+        <a href="#license">License</a>
+        <a href="https://github.com/ThomasDeStrooper/SEUS_PTGI_HRR_REFORGED" target="_blank" rel="noopener" aria-label="GitHub Repository" style="display: inline-flex; align-items: center;">
+          <svg class="github-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+
+    // Check for saved user preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      root.setAttribute('data-theme', savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = root.getAttribute('data-theme');
+      if (currentTheme === 'light') {
+        root.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        root.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
