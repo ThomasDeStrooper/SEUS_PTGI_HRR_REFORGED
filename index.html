@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080a0f">
+  <meta name="theme-color" content="#06070a">
   <meta name="description" content="SEUS PTGI HRR 2.1 Reforged — a community-made shader edit focused on image quality, performance, and expanded customization.">
   <title>SEUS PTGI HRR 2.1 Reforged — Minecraft Shader</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,31 +12,47 @@
   <style>
     :root {
       color-scheme: dark;
-      --bg: #080a0f;
-      --panel: rgba(18, 22, 31, .76);
-      --panel-solid: #11151e;
-      --line: rgba(255,255,255,.095);
-      --muted: #a2aaba;
-      --text: #f5f7fb;
+      --bg: #05070a;
+      --panel: rgba(22, 27, 38, 0.45);
+      --panel-solid: rgba(16, 20, 28, 0.75);
+      --line: rgba(255, 255, 255, 0.14);
+      --line-inner: rgba(255, 255, 255, 0.06);
+      --line-glow: rgba(139, 122, 255, 0.4);
+      --muted: #949ea8;
+      --text: #f5f7fa;
       --accent: #8b7aff;
       --accent2: #65a9ff;
       --max: 1160px;
-      --hero-glow: rgba(104,96,255,.12);
-      --radial-bg: radial-gradient(ellipse at 50% -10%, rgba(98, 92, 202, .17), transparent 48%);
+      
+      --hero-overlay-top: rgba(5, 7, 10, 0.20);
+      --hero-overlay-mid: rgba(5, 7, 10, 0.65);
+      --title-start: #ffffff;
+      --hero-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
+      
+      --success-color: #34d399;
+      --danger-color: #f87171;
     }
 
     [data-theme="light"] {
       color-scheme: light;
-      --bg: #f4f6fb;
-      --panel: rgba(255, 255, 255, .85);
-      --panel-solid: #ffffff;
-      --line: rgba(0,0,0,.08);
-      --muted: #576075;
-      --text: #111827;
+      --bg: #f2f5fa;
+      --panel: rgba(255, 255, 255, 0.55);
+      --panel-solid: rgba(255, 255, 255, 0.85);
+      --line: rgba(0, 0, 0, 0.09);
+      --line-inner: rgba(255, 255, 255, 0.6);
+      --line-glow: rgba(109, 94, 252, 0.3);
+      --muted: #5b6376;
+      --text: #0b101d;
       --accent: #6d5efc;
       --accent2: #2575fc;
-      --hero-glow: rgba(109,94,252,.08);
-      --radial-bg: radial-gradient(ellipse at 50% -10%, rgba(109, 94, 252, .1), transparent 48%);
+      
+      --hero-overlay-top: rgba(242, 245, 250, 0.25);
+      --hero-overlay-mid: rgba(242, 245, 250, 0.70);
+      --title-start: #0b101d;
+      --hero-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+
+      --success-color: #059669;
+      --danger-color: #dc2626;
     }
 
     * { box-sizing: border-box; }
@@ -45,128 +61,245 @@
       margin: 0; background: var(--bg); color: var(--text);
       font-family: "DM Sans", system-ui, sans-serif; line-height: 1.65;
       -webkit-font-smoothing: antialiased;
-      background-image: var(--radial-bg);
-      transition: background .3s ease, color .3s ease;
+      transition: background .4s ease, color .4s ease;
     }
     a { color: inherit; text-decoration: none; }
     button { font: inherit; }
     .wrap { width: min(var(--max), calc(100% - 44px)); margin: 0 auto; }
+    
+    /* Universal Apple Liquid Glass Style for all boxes, buttons, panels */
+    .nav, .feature, .panel, .spec, .credit, .license-card, .license-banner, .license-notice, .callout, footer, .btn-secondary, .nav-cta, .theme-toggle, .eyebrow, .num, .feature-icon, .license-banner-icon, .notice {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(32px) saturate(200%);
+      -webkit-backdrop-filter: blur(32px) saturate(200%);
+      box-shadow: inset 0 1px 0 var(--line-inner), 0 16px 48px 0 rgba(0, 0, 0, 0.08);
+      transition: transform .35s cubic-bezier(0.16, 1, 0.3, 1), border-color .35s ease, box-shadow .35s ease, background .35s ease;
+    }
+
+    /* Hover effects for interactive glass elements */
+    .feature:hover, .spec:hover, .credit:hover, .license-card:hover, .btn:hover, .nav-cta:hover, .theme-toggle:hover {
+      transform: translateY(-3px);
+      border-color: var(--line-glow);
+      box-shadow: inset 0 1px 0 var(--line-inner), 0 22px 55px 0 rgba(0, 0, 0, 0.14);
+    }
+
+    /* Apple Liquid Glass Navbar */
     .nav {
-      position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line);
-      background: var(--panel); backdrop-filter: blur(20px);
-      transition: background .3s ease, border-color .3s ease;
+      position: sticky; top: 0; z-index: 100;
+      border-top: none; border-left: none; border-right: none;
+      border-radius: 0;
     }
     .nav-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { display: flex; align-items: center; gap: 12px; font-family: Manrope, sans-serif; font-weight: 800; letter-spacing: -.04em; }
     .brand-mark {
       width: 35px; height: 35px; display: grid; place-items: center; border-radius: 11px;
       background: linear-gradient(135deg, var(--accent), var(--accent2)); color: white; font-size: 17px;
-      box-shadow: 0 6px 28px rgba(110, 103, 255, .25);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 8px 24px rgba(109, 94, 252, 0.4);
     }
     .brand small { display: block; color: var(--muted); font: 500 10px "DM Sans", sans-serif; letter-spacing: .13em; text-transform: uppercase; margin-top: -4px; }
     .nav-links { display: flex; align-items: center; gap: 24px; color: var(--muted); font-size: 13px; }
     .nav-links a:hover, .text-link:hover { color: var(--text); }
-    .nav-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 10px; color: var(--text); background: var(--panel-solid); }
+    
+    .nav-cta { 
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; 
+      border-radius: 14px; color: var(--text); background: var(--panel-solid);
+    }
     .github-icon { width: 16px; height: 16px; fill: currentColor; display: inline-block; vertical-align: middle; }
     
     /* Theme Toggle Button */
     .theme-toggle {
-      background: var(--panel-solid);
-      border: 1px solid var(--line);
-      border-radius: 10px;
+      border-radius: 14px;
       width: 40px;
       height: 40px;
       display: grid;
       place-items: center;
       cursor: pointer;
       color: var(--text);
-      transition: transform .2s, background .2s, border-color .2s;
+      background: var(--panel-solid);
     }
-    .theme-toggle:hover { transform: translateY(-2px); border-color: var(--accent); }
     .theme-toggle svg { width: 18px; height: 18px; fill: currentColor; }
     [data-theme="light"] .icon-moon { display: block; }
     [data-theme="light"] .icon-sun { display: none; }
     :root:not([data-theme="light"]) .icon-moon { display: none; }
     :root:not([data-theme="light"]) .icon-sun { display: block; }
 
-    .hero { position: relative; padding: 88px 0 70px; overflow: hidden; }
-    .hero:before { content:""; position:absolute; width:620px; height:620px; left:50%; top:-250px; transform:translateX(-50%); border-radius:50%; background:var(--hero-glow); filter:blur(90px); pointer-events:none; }
-    .hero-content { position: relative; text-align: center; max-width: 900px; margin: 0 auto; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 9px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel-solid); color: var(--muted); font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
-    .dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 13px var(--accent); }
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 160px 0 120px;
+      overflow: hidden;
+      background-image: 
+        linear-gradient(to bottom, var(--hero-overlay-top) 0%, var(--hero-overlay-mid) 75%, var(--bg) 100%),
+        url('https://github.com/user-attachments/assets/88f9fff8-aa75-426b-9468-1397dcce96a1');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image .4s ease;
+    }
+    .hero:before { display: none; }
+    .hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; margin: 0 auto; }
+    
+    .eyebrow { 
+      display: inline-flex; align-items: center; gap: 9px; padding: 7px 16px; 
+      border-radius: 999px; background: var(--panel-solid); 
+      color: var(--muted); font-size: 11px; letter-spacing: .11em; text-transform: uppercase;
+    }
+    .dot { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 12px var(--accent); }
+    
     h1,h2,h3,h4 { font-family: Manrope, "DM Sans", sans-serif; letter-spacing: -.045em; line-height: 1.12; color: var(--text); }
-    h1 { font-size: clamp(42px, 7vw, 76px); margin: 24px 0 19px; font-weight: 800; }
-    .gradient { background: linear-gradient(100deg, var(--text) 20%, var(--accent) 56%, var(--accent2) 100%); color: transparent; background-clip: text; -webkit-background-clip: text; }
-    .hero p { color: var(--muted); max-width: 660px; margin: 0 auto; font-size: clamp(15px, 1.8vw, 18px); }
-    .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-    .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 19px; border-radius: 12px; font-size: 13px; font-weight: 700; transition: transform .2s, border-color .2s, background .2s; }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { color: #fff; background: linear-gradient(110deg, var(--accent), var(--accent2)); box-shadow: 0 9px 30px rgba(101,112,255,.22); }
-    .btn-secondary { border: 1px solid var(--line); background: var(--panel-solid); color: var(--text); }
-    .btn-secondary:hover { background: var(--panel); border-color: var(--accent); }
-    .hero-meta { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 27px; color: var(--muted); font-size: 12px; }
+    
+    h1 { 
+      font-size: clamp(42px, 7vw, 76px); 
+      margin: 24px 0 19px; 
+      font-weight: 800; 
+      filter: drop-shadow(var(--hero-shadow));
+    }
+    .gradient { 
+      background: linear-gradient(100deg, var(--title-start) 10%, var(--accent) 55%, var(--accent2) 100%); 
+      color: transparent; 
+      background-clip: text; 
+      -webkit-background-clip: text; 
+    }
+    
+    .hero p { 
+      color: var(--muted); 
+      max-width: 660px; 
+      margin: 0 auto; 
+      font-size: clamp(15px, 1.8vw, 18px); 
+      text-shadow: 0 2px 15px rgba(0,0,0,0.6);
+    }
+    
+    .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+    .btn { 
+      min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; 
+      padding: 0 24px; border-radius: 16px; font-size: 13px; font-weight: 700; 
+    }
+    .btn-primary { 
+      color: #fff; background: linear-gradient(110deg, var(--accent), var(--accent2)); 
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 12px 35px rgba(109, 94, 252, 0.35); 
+    }
+    .btn-secondary { background: var(--panel-solid); color: var(--text); }
+    
+    .hero-meta { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 28px; color: var(--muted); font-size: 12px; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
     .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
-    .preview-frame { position: relative; margin: 54px auto 0; max-width: 1050px; border: 1px solid var(--line); border-radius: 19px; padding: 7px; background: var(--panel); box-shadow: 0 35px 100px rgba(0,0,0,.15); }
-    .preview-frame:after { content:""; position:absolute; inset:0; border-radius:19px; pointer-events:none; box-shadow: inset 0 0 0 1px var(--line); }
-    .preview-frame img { display:block; width:100%; aspect-ratio: 16/7; object-fit:cover; object-position:center; border-radius:13px; background:var(--panel-solid); }
-    .section { padding: 78px 0; }
-    .section-head { max-width: 660px; margin-bottom: 30px; }
+    
+    /* Sections & Grid layout */
+    .section { padding: 95px 0; }
+    .section-head { max-width: 660px; margin-bottom: 38px; }
     .kicker { color: var(--accent); text-transform: uppercase; letter-spacing: .15em; font-size: 11px; font-weight: 700; }
     h2 { font-size: clamp(30px, 4vw, 44px); margin: 10px 0 12px; }
     .section-head p, .muted { color: var(--muted); margin: 0; }
-    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .feature, .panel { border: 1px solid var(--line); background: var(--panel); border-radius: 17px; }
-    .feature { padding: 23px; min-height: 190px; }
-    .feature-icon { display:grid; place-items:center; width:40px; height:40px; border-radius:12px; color:var(--accent); background:rgba(139,122,255,.1); border:1px solid var(--line); font-size:18px; }
+    
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    
+    .feature { padding: 28px; min-height: 200px; border-radius: 24px; }
+    .feature-icon { 
+      display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; 
+      color: var(--accent); background: rgba(139, 122, 255, 0.1); font-size: 18px; 
+    }
     h3 { font-size: 17px; letter-spacing: -.025em; margin: 19px 0 8px; }
     .feature p { font-size: 13px; color: var(--muted); margin: 0; }
-    .install-layout { display:grid; grid-template-columns: .8fr 1.2fr; gap: 28px; align-items:start; }
+    
+    .install-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 28px; align-items: start; }
     .install-intro { position: sticky; top: 105px; }
     .install-intro .btn { margin-top: 22px; }
-    .steps { padding: 10px 24px; }
-    .step { display:grid; grid-template-columns: 36px 1fr; gap: 15px; padding: 19px 0; border-bottom: 1px solid var(--line); }
-    .step:last-child { border-bottom:0; }
-    .num { width: 32px; height:32px; display:grid; place-items:center; border-radius:10px; border:1px solid var(--line); background:var(--panel-solid); color:var(--accent); font-size:12px; font-weight:700; }
-    .step h3 { margin: 2px 0 5px; font-size:15px; }
-    .step p { margin:0; color:var(--muted); font-size:13px; }
-    .step a, .text-link { color:var(--accent); text-decoration: underline; text-decoration-color:rgba(139,122,255,.4); text-underline-offset:3px; }
-    .notice { margin-top: 18px; padding: 15px 17px; border: 1px solid var(--line); background: var(--panel-solid); border-radius: 12px; color: var(--muted); font-size:12px; }
-    .specs { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
-    .spec { padding:19px; border:1px solid var(--line); border-radius:14px; background:var(--panel); }
-    .spec span { display:block; color:var(--muted); font-size:11px; margin-bottom:8px; }
-    .spec strong { font-family:Manrope,sans-serif; font-size:15px; }
-    .callout { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:32px; border:1px solid var(--line); border-radius:20px; background:var(--panel); }
-    .callout h2 { margin:0 0 8px; font-size:clamp(25px,3vw,34px); }
-    .callout p { margin:0; color:var(--muted); font-size:13px; }
-    .credits { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
-    .credit { padding:20px; border:1px solid var(--line); border-radius:14px; background:var(--panel); }
-    .credit strong { display:block; font-family:Manrope,sans-serif; margin-bottom:5px; }
-    .credit span { color:var(--muted); font-size:12px; }
+    
+    .steps { padding: 12px 26px; border-radius: 24px; }
+    .step { display: grid; grid-template-columns: 36px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .step:last-child { border-bottom: 0; }
+    .num { 
+      width: 32px; height: 32px; display: grid; place-items: center; border-radius: 10px; 
+      background: var(--panel-solid); color: var(--accent); 
+      font-size: 12px; font-weight: 700; 
+    }
+    .step h3 { margin: 2px 0 5px; font-size: 15px; }
+    .step p { margin: 0; color: var(--muted); font-size: 13px; }
+    .step a, .text-link { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(139, 122, 255, 0.4); text-underline-offset: 3px; }
+    
+    .notice { margin-top: 18px; padding: 18px 22px; border-radius: 18px; color: var(--muted); font-size: 12.5px; }
+    
+    .specs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .spec { padding: 24px; border-radius: 24px; }
+    .spec span { display: block; color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+    .spec strong { font-family: Manrope, sans-serif; font-size: 15px; }
+    
+    .callout { 
+      display: flex; justify-content: space-between; align-items: center; gap: 24px; 
+      padding: 40px; border-radius: 28px; 
+    }
+    .callout h2 { margin: 0 0 8px; font-size: clamp(25px, 3vw, 34px); }
+    .callout p { margin: 0; color: var(--muted); font-size: 13px; }
+    
+    .credits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .credit { padding: 26px; border-radius: 24px; }
+    .credit strong { display: block; font-family: Manrope, sans-serif; margin-bottom: 5px; }
+    .credit span { color: var(--muted); font-size: 12px; }
 
-    /* License Section Styling */
-    .license-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
-    .license-card { padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel-solid); }
-    .license-card h4 { margin: 0 0 12px; font-size: 16px; display: flex; align-items: center; gap: 8px; }
-    .license-card ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 13px; }
-    .license-card li { margin-bottom: 8px; }
+    /* License Liquid Glass Styling */
+    .license-container { display: flex; flex-direction: column; gap: 20px; }
+    
+    .license-banner { padding: 26px 30px; display: flex; align-items: center; gap: 20px; border-radius: 24px; }
+    .license-banner-icon {
+      width: 46px; height: 46px; border-radius: 14px;
+      background: rgba(139, 122, 255, 0.1); color: var(--accent); 
+      display: grid; place-items: center; font-size: 18px; flex-shrink: 0;
+    }
+    .license-banner h3 { margin: 0 0 4px; font-size: 16px; }
+    .license-banner p { margin: 0; font-size: 13px; color: var(--muted); }
+
+    .license-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    
+    .license-card { padding: 30px; border-radius: 24px; }
+    .license-card.permitted { border-top: 3px solid var(--success-color); }
+    .license-card.prohibited { border-top: 3px solid var(--danger-color); }
+    
+    .license-card h3 { margin: 0 0 20px; font-size: 17px; display: flex; align-items: center; gap: 10px; }
+    .license-card.permitted h3 { color: var(--success-color); }
+    .license-card.prohibited h3 { color: var(--danger-color); }
+
+    .license-card ul { margin: 0; padding: 0; list-style: none; }
+    .license-card li { 
+      position: relative; padding-left: 26px; margin-bottom: 14px; 
+      color: var(--muted); font-size: 13.5px; line-height: 1.55; 
+    }
     .license-card li:last-child { margin-bottom: 0; }
-    .license-notice { margin-top: 16px; padding: 20px; border-radius: 14px; border: 1px solid var(--line); background: var(--panel-solid); font-size: 13px; color: var(--muted); }
-    .code-inline { background: var(--panel); padding: 2px 6px; border-radius: 4px; color: var(--accent); font-family: monospace; font-size: 12px; border: 1px solid var(--line); }
+    .license-card li:before {
+      position: absolute; left: 0; top: 1px; font-weight: 700; font-size: 14px;
+    }
+    .license-card.permitted li:before { content: "✓"; color: var(--success-color); }
+    .license-card.prohibited li:before { content: "✕"; color: var(--danger-color); }
 
-    footer { border-top:1px solid var(--line); padding:26px 0 34px; color:var(--muted); font-size:11px; background: var(--panel); transition: background .3s ease; }
-    .footer-inner { display:flex; justify-content:space-between; gap:18px; align-items:center; }
-    .footer-links { display:flex; gap:18px; flex-wrap:wrap; align-items:center; }
-    .footer-links a:hover { color:var(--text); }
+    .license-notice { padding: 28px 30px; border-radius: 24px; }
+    .license-notice h4 { margin: 0 0 8px; font-size: 15px; }
+    .license-notice p { margin: 0 0 8px; font-size: 13px; color: var(--muted); }
+    .license-notice p:last-child { margin-bottom: 0; }
+
+    .code-inline { 
+      background: var(--panel-solid); padding: 3px 8px; border-radius: 6px; 
+      color: var(--accent); font-family: monospace; font-size: 12px; border: 1px solid var(--line); 
+    }
+
+    footer { 
+      border-top: 1px solid var(--line); padding: 36px 0 44px; color: var(--muted); 
+      font-size: 11.5px; border-radius: 0;
+    }
+    .footer-inner { display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+    .footer-links { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
+    .footer-links a:hover { color: var(--text); }
+    
     @media (max-width: 760px) {
-      .nav-inner { min-height:65px; } .nav-links { gap:14px; } .nav-links a:not(.nav-cta) { display:none; }
-      .hero { padding:66px 0 48px; } .preview-frame { margin-top:38px; } .preview-frame img { aspect-ratio: 4/3; }
-      .section { padding:55px 0; } .grid, .license-grid { grid-template-columns:1fr; } .install-layout { grid-template-columns:1fr; }
-      .install-intro { position:static; } .specs { grid-template-columns:1fr 1fr; } .callout { align-items:flex-start; flex-direction:column; padding:25px; } .credits { grid-template-columns:1fr; }
+      .nav-inner { min-height: 65px; } .nav-links { gap: 14px; } .nav-links a:not(.nav-cta) { display: none; }
+      .hero { padding: 100px 0 70px; }
+      .section { padding: 65px 0; } .grid, .license-grid { grid-template-columns: 1fr; } .install-layout { grid-template-columns: 1fr; }
+      .install-intro { position: static; } .specs { grid-template-columns: 1fr 1fr; } .callout { align-items: flex-start; flex-direction: column; padding: 28px; } .credits { grid-template-columns: 1fr; }
+      .license-banner { flex-direction: column; align-items: flex-start; }
     }
     @media (max-width: 480px) {
-      .wrap { width:calc(100% - 30px); } .brand { font-size:13px; } .brand small { font-size:9px; }
-      .grid { grid-template-columns:1fr; } .feature { min-height:0; } .hero-meta { gap:12px; }
-      .btn { width:100%; } .actions { width:100%; } .footer-inner { align-items:flex-start; flex-direction:column; }
+      .wrap { width: calc(100% - 30px); } .brand { font-size: 13px; } .brand small { font-size: 9px; }
+      .grid { grid-template-columns: 1fr; } .feature { min-height: 0; } .hero-meta { gap: 12px; }
+      .btn { width: 100%; } .actions { width: 100%; } .footer-inner { align-items: flex-start; flex-direction: column; }
     }
     @media (prefers-reduced-motion: reduce) { html {scroll-behavior:auto} *,*:before,*:after {transition:none!important; animation:none!important} }
   </style>
@@ -207,9 +340,6 @@
         </div>
         <div class="hero-meta">
           <span>✦ OptiFine &amp; Iris</span><span>✦ Physics Mod support</span><span>✦ Customizable shader menu</span>
-        </div>
-        <div class="preview-frame">
-          <img src="https://github.com/user-attachments/assets/88f9fff8-aa75-426b-9468-1397dcce96a1" alt="SEUS PTGI HRR 2.1 Reforged in-game preview">
         </div>
       </div>
     </section>
@@ -264,31 +394,32 @@
           <div class="spec"><span>Minimum GPU guide</span><strong>NVIDIA RTX 2050</strong></div>
           <div class="spec"><span>Recommended GPU guide</span><strong>NVIDIA RTX 3060</strong></div>
         </div>
-        <div class="notice">Compatibility note: NVIDIA GPUs are currently the main tested hardware. Some visual issues or occasional crashes may occur on AMD; Intel GPU compatibility is not guaranteed. Light rays may sometimes shine through buildings or other geometry.</div>
+        <div class="notice" style="margin-top: 16px;">Compatibility note: NVIDIA GPUs are currently the main tested hardware. Some visual issues or occasional crashes may occur on AMD; Intel GPU compatibility is not guaranteed. Light rays may sometimes shine through buildings or other geometry.</div>
       </div>
     </section>
 
-    <!-- License Terms Section -->
+    <!-- License Section -->
     <section class="section" id="license">
       <div class="wrap">
         <div class="section-head">
           <div class="kicker">Legal Terms</div>
-          <h2>SEUS PTGI REFORGED Patch &amp; Shader License Terms</h2>
+          <h2>License &amp; Usage Terms</h2>
           <p>By using the <strong>SEUS PTGI REFORGED patch</strong> or the <strong>SEUS PTGI REFORGED shader</strong>, for any purpose whatsoever, you acknowledge and agree to all terms and conditions stated below.</p>
         </div>
 
-        <div class="panel" style="padding: 28px;">
-          <div style="margin-bottom: 24px;">
-            <h3 style="margin-top: 0;">Definitions</h3>
-            <p class="muted" style="font-size: 14px;">
-              • <strong>“Patch”</strong> refers to the <span class="code-inline">.zip</span> patch used to extract the SEUS PTGI REFORGED shader.<br>
-              • <strong>“Shader”</strong> refers specifically to the <strong>SEUS PTGI REFORGED shader</strong>.
-            </p>
+        <div class="license-container">
+          <div class="license-banner">
+            <div class="license-banner-icon">§</div>
+            <div>
+              <h3>Definitions</h3>
+              <p>• <strong>“Patch”</strong> refers to the <span class="code-inline">.zip</span> patch used to extract the SEUS PTGI REFORGED shader.<br>
+              • <strong>“Shader”</strong> refers specifically to the <strong>SEUS PTGI REFORGED shader</strong>.</p>
+            </div>
           </div>
 
           <div class="license-grid">
-            <div class="license-card">
-              <h4 style="color: var(--accent);">✓ Permitted Uses</h4>
+            <div class="license-card permitted">
+              <h3>Permitted Uses</h3>
               <ul>
                 <li>Use the Patch to extract the SEUS PTGI REFORGED Shader.</li>
                 <li>Use the Shader for gameplay, content creation, and livestreaming.</li>
@@ -299,8 +430,8 @@
               </ul>
             </div>
 
-            <div class="license-card">
-              <h4 style="color: #e5534b;">✕ Prohibited Uses</h4>
+            <div class="license-card prohibited">
+              <h3>Prohibited Uses</h3>
               <ul>
                 <li>Redistribute the Shader directly without also distributing the Patch, regardless of whether the Shader has been modified.</li>
                 <li>Redistribute a modified or edited version of the Patch.</li>
@@ -311,14 +442,10 @@
           </div>
 
           <div class="license-notice">
-            <h4 style="margin: 0 0 8px 0; color: var(--text);">Unspecified Uses</h4>
-            <p style="margin: 0 0 10px 0;">Any use that is <strong>not explicitly permitted above</strong> must comply with the applicable <strong>SEUS license</strong>.</p>
-            <p style="margin: 0;">If a particular use is neither explicitly permitted by these terms nor addressed by the SEUS license, that use is considered <strong>All Rights Reserved</strong> and is therefore not permitted unless authorization is obtained from the appropriate rights holder.</p>
+            <h4>Unspecified Uses</h4>
+            <p>Any use that is <strong>not explicitly permitted above</strong> must comply with the applicable <strong>SEUS license</strong>.</p>
+            <p>If a particular use is neither explicitly permitted by these terms nor addressed by the SEUS license, that use is considered <strong>All Rights Reserved</strong> and is therefore not permitted unless authorization is obtained from the appropriate rights holder.</p>
           </div>
-
-          <p style="margin: 20px 0 0 0; text-align: center; font-size: 12px;" class="muted">
-            By using the Patch or Shader, you confirm that you have read, understood, and agreed to these terms.
-          </p>
         </div>
       </div>
     </section>
@@ -369,7 +496,6 @@
     const themeToggle = document.getElementById('themeToggle');
     const root = document.documentElement;
 
-    // Check for saved user preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       root.setAttribute('data-theme', savedTheme);
